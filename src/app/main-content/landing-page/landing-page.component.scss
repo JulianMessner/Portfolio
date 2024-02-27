@@ -1,10 +1,11 @@
 .landing-page-content {
   display: flex;
   width: auto;
+  max-width: 1440px;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
   padding: 0;
   margin-left: 100px;
   margin-right: 100px;
@@ -14,6 +15,11 @@
   background-size: contain;
   > img {
     height: 400px;
+  }
+  > #vector-bg {
+    position: absolute;
+    top: 400px;
+    width: 100vw;
   }
 }
 
@@ -64,6 +70,86 @@
       margin: 0;
       color: #4b47ff;
       padding-bottom: 10px;
+    }
+  }
+}
+
+.landing-page-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+  > .line {
+    width: 100px;
+    height: 0;
+    border: 2px solid #4B47FF;
+  }
+  > .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  > .social-icons img {
+    margin-right: 42px;
+    height: 30px;
+    width: 30px;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    &:hover {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+  }
+  > .social-icons a {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.scroll-down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: rotate(90deg);
+    width: 140px;
+    height: auto;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: 545px;
+    >img{
+        height: 24px;
+        width: 24px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+  .landing-page-content {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .landing-page-intro {
+    > span {
+      font-size: 50px;
+    }
+    > .landing-page-name {
+      > #my-name {
+        font-size: 57px;
+      }
+      > #job-name {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .landing-page-content-right {
+    > a {
+      font-size: 18px;
     }
   }
 }
