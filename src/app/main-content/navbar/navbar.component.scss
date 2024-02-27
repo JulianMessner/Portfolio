@@ -1,11 +1,21 @@
 .header {
   width: auto;
+  height: 27px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 37px 100px 37px 100px;
+  padding-top: 37px;
+  padding-bottom: 37px;
   background-color: #151d2f;
   font-size: 23px;
+  margin-left: 100px;
+  margin-right: 100px;
+  > a img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50px;
+    width: auto;
+  }
   > .nav-links {
     gap: 29px;
     display: flex;
@@ -14,8 +24,8 @@
       color: white;
       text-decoration: none;
       font-size: 23px;
-      &:hover{
-        color: #20dae6;
+      &:hover {
+        color: #00bee8;
         cursor: pointer;
       }
     }
