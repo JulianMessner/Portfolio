@@ -1,0 +1,71 @@
+.about-me-container {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 100%;
+  gap: 10%;
+}
+
+.section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 500px;
+    >h2{
+        font-size: 77px;
+    }
+}
+
+.section-right{
+    display: flex;
+    align-items: center;
+    > .line{
+        height: 0;
+        width: 267px;
+        border: 2px solid #00BEE8;
+    }
+}
+
+#about-picture{
+    height: 500px;
+    width: auto;
+    border-radius: 50%;
+    border: 4px solid #00BEE8;
+}
+
+.bulb-section,
+.puzzle-section{
+    display: flex;
+    align-items: flex-start;
+    font-size: 16px;
+    >img{
+        height: 50px;
+        width: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-me-container {
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 0;
+  }
+
+  .section-left{
+    >h2{
+    font-size: 57px;
+    }
+  }
+
+  #about-picture{
+    height: 400px;
+  }
+
+  .section-right .line{
+    width: 150px;
+  }
+}

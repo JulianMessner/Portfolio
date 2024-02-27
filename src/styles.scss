@@ -20,8 +20,9 @@ body {
   flex-direction: column;
   background-color: #151d2f;
   overflow-x: hidden;
-  background-image: url(./assets/img/background/vector.png);
-  background-repeat: no-repeat;
-  background-position: 0px 350px; /* Ändern Sie die Hintergrundposition */
-  background-size: 100%; 
+
+  background-image: url(./assets/img/background/purpe-shade1.png), url(./assets/img/background/vector.png);
+  background-position: right -500px top 500px, 0px 350px;
+  background-size: 50%, 100%;
+  background-repeat: no-repeat, no-repeat;
 }
