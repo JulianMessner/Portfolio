@@ -1,1 +1,82 @@
-<p>contact works!</p>
+<div class="contact-header">
+    <div class="line"></div>
+    <h2>Contact</h2>
+</div>
+<div class="full-contact-section">
+    <div class="contact-container">
+        <div class="contact-text">
+            <h3>Got a problem to solve?</h3>
+            <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to
+                your projects with my work.</p>
+            <p>Need a Frontend developer? <b>Contact me!</b></p>
+        </div>
+        <div class="form-scroll-up">
+            <form name="form" #f="ngForm" (ngSubmit)="f.form.valid && onSubmit(f)" novalidate>
+                <label for="name"></label>
+                <input id="name-field" type="text" class="form-control" name="fullname" [(ngModel)]="form.fullname"
+                    #fullname="ngModel" [ngClass]="{ 'is-invalid': f.submitted && fullname.errors }"
+                    placeholder="Your name" required minlength="2">
+                <div *ngIf="f.submitted && (fullname.errors && (fullname.errors['required'] || fullname.errors['minlength']))"
+                    class="invalid-feedback">
+                    @if (fullname.errors['required']) {
+                    <div>Your name is required</div>
+                    }
+                    @if (fullname.errors['minlength']) {
+                    <div>Your name must contain at least 2 character</div>
+                    }
+                </div>
+                <br>
+
+                <label for="email"></label>
+                <input id="email-field" type="email" class="form-control" name="email" [(ngModel)]="form.email" email
+                    #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.errors }" placeholder="Your email"
+                    required>
+                @if (f.submitted && email.errors) {
+                <div class="invalid-feedback">
+                    @if (email.errors['required']) {
+                    <div>Your email is required</div>
+                    }
+                    @if (email.errors['email']) {
+                    <div>Your email is invalid</div>
+                    }
+                </div>
+                }
+                <br>
+
+                <label for="message"></label>
+                <textarea id="message-field" class="form-control" name="username" [(ngModel)]="form.username"
+                    minlength="4" #username="ngModel" [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
+                    placeholder="Your message" required></textarea>
+                @if (f.submitted && username.errors ){
+                <div class="invalid-feedback">
+                    @if (username.errors['required']) {
+                    <div>Your message is empty</div>
+                    }
+                    @if (username.errors['minlength']) {
+                    <div>Your message must contain at least 4 characters</div>
+                    }
+                </div>
+                }
+                <br>
+
+                <div class="checkbox-div">
+                    <input type="checkbox" class="form-control" name="acceptPolicy" [(ngModel)]="form.acceptPolicy"
+                        class="form-check-input" required #acceptPolicy="ngModel"
+                        [ngClass]="{ 'is-invalid-checkbox': f.submitted && acceptPolicy.errors }">
+                    <label for="privacy-policy" id="checkbox-text">I read the <a href="#">privacy policy</a> and agree
+                        to
+                        the processing of my data as outlined.</label>
+
+                </div>
+                @if (f.submitted && acceptPolicy.errors) {
+                <div class="invalid-feedback">Please accept the privacy policy</div>
+                }
+
+                <br>
+
+                <button id="sendButton" type="submit">Send message :)</button>
+            </form>
+            <a href="#" class="scroll-up"><img src="../../../assets/img/icons/up-white.png" alt="arrow up"></a>
+        </div>
+    </div>
+</div>

@@ -9,9 +9,16 @@ import { FooterComponent } from './shared/footer/footer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, ImprintComponent, MainContentComponent, PrivacyPolicyComponent, FooterComponent],
+  imports: [
+    RouterOutlet,
+    CommonModule,
+    ImprintComponent,
+    MainContentComponent,
+    PrivacyPolicyComponent,
+    FooterComponent
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'portfolio';
