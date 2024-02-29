@@ -14,7 +14,7 @@ export class ContactComponent {
   form = {
     fullname: '',
     email: '',
-    username: '',
+    message: '',
     acceptPolicy: false,
   };
 

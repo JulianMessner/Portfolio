@@ -12,25 +12,33 @@
         </div>
         <div class="form-scroll-up">
             <form name="form" #f="ngForm" (ngSubmit)="f.form.valid && onSubmit(f)" novalidate>
-                <label for="name"></label>
-                <input id="name-field" type="text" class="form-control" name="fullname" [(ngModel)]="form.fullname"
-                    #fullname="ngModel" [ngClass]="{ 'is-invalid': f.submitted && fullname.errors }"
-                    placeholder="Your name" required minlength="2">
-                <div *ngIf="f.submitted && (fullname.errors && (fullname.errors['required'] || fullname.errors['minlength']))"
-                    class="invalid-feedback">
+                <div class="input-container" id="name-field"
+                    [ngClass]="{ 'is-invalid': f.submitted && fullname.errors }">
+                    <label for="name"></label>
+                    <input type="text" class="form-control" name="fullname" [(ngModel)]="form.fullname"
+                        #fullname="ngModel" placeholder="Your name" required minlength="2">
+                    <img *ngIf="f.submitted && fullname.errors" src="../../../assets/img/icons/red-mark.png"
+                        class="error-icon" alt="Error">
+                </div>
+                @if (f.submitted && fullname.errors) {
+                <div class="invalid-feedback">
                     @if (fullname.errors['required']) {
                     <div>Your name is required</div>
                     }
                     @if (fullname.errors['minlength']) {
-                    <div>Your name must contain at least 2 character</div>
+                    <div>Your name must contain at least 2 characters</div>
                     }
                 </div>
+                }
                 <br>
 
-                <label for="email"></label>
-                <input id="email-field" type="email" class="form-control" name="email" [(ngModel)]="form.email" email
-                    #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.errors }" placeholder="Your email"
-                    required>
+                <div class="input-container" id="email-field" [ngClass]="{ 'is-invalid': f.submitted && email.errors }">
+                    <label for="email"></label>
+                    <input type="email" class="form-control" name="email" [(ngModel)]="form.email" email
+                        #email="ngModel" placeholder="Your email" required>
+                    <img *ngIf="f.submitted && email.errors" src="../../../assets/img/icons/red-mark.png"
+                        class="error-icon" alt="Error">
+                </div>
                 @if (f.submitted && email.errors) {
                 <div class="invalid-feedback">
                     @if (email.errors['required']) {
@@ -43,21 +51,26 @@
                 }
                 <br>
 
+                <div class="input-container" id="message-field"
+                [ngClass]="{ 'is-invalid': f.submitted && message.errors }">
                 <label for="message"></label>
-                <textarea id="message-field" class="form-control" name="username" [(ngModel)]="form.username"
-                    minlength="4" #username="ngModel" [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
-                    placeholder="Your message" required></textarea>
-                @if (f.submitted && username.errors ){
+                <textarea class="form-control" name="message" [(ngModel)]="form.message" minlength="4"
+                    #message="ngModel" placeholder="Your message" required></textarea>
+                <img *ngIf="f.submitted && message.errors" src="../../../assets/img/icons/red-mark.png"
+                    class="error-icon" alt="Error">
+            </div>
+            @if (f.submitted && message.errors) {
                 <div class="invalid-feedback">
-                    @if (username.errors['required']) {
+                    @if (message.errors['required']) {
                     <div>Your message is empty</div>
                     }
-                    @if (username.errors['minlength']) {
+                    @if (message.errors['minlength']) {
                     <div>Your message must contain at least 4 characters</div>
                     }
                 </div>
-                }
                 <br>
+            }
+            
 
                 <div class="checkbox-div">
                     <input type="checkbox" class="form-control" name="acceptPolicy" [(ngModel)]="form.acceptPolicy"
