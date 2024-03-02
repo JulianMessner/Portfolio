@@ -13,10 +13,12 @@
         <div class="form-scroll-up">
             <form name="form" #f="ngForm" (ngSubmit)="f.form.valid && onSubmit(f)" novalidate>
                 <div class="input-container" id="name-field"
-                    [ngClass]="{ 'is-invalid': f.submitted && fullname.errors }">
+                    [ngClass]="{ 'is-invalid': f.submitted && fullname.errors, 'is-valid': fullname.valid }">
                     <label for="name"></label>
                     <input type="text" class="form-control" name="fullname" [(ngModel)]="form.fullname"
                         #fullname="ngModel" placeholder="Your name" required minlength="2">
+                    <img *ngIf="fullname.valid" src="../../../assets/img/icons/green-mark.png" class="success-icon"
+                        alt="Success">
                     <img *ngIf="f.submitted && fullname.errors" src="../../../assets/img/icons/red-mark.png"
                         class="error-icon" alt="Error">
                 </div>
@@ -32,10 +34,13 @@
                 }
                 <br>
 
-                <div class="input-container" id="email-field" [ngClass]="{ 'is-invalid': f.submitted && email.errors }">
+                <div class="input-container" id="email-field"
+                    [ngClass]="{ 'is-invalid': f.submitted && email.errors, 'is-valid': email.valid }">
                     <label for="email"></label>
                     <input type="email" class="form-control" name="email" [(ngModel)]="form.email" email
                         #email="ngModel" placeholder="Your email" required>
+                    <img *ngIf="email.valid" src="../../../assets/img/icons/green-mark.png" class="success-icon"
+                        alt="Success">
                     <img *ngIf="f.submitted && email.errors" src="../../../assets/img/icons/red-mark.png"
                         class="error-icon" alt="Error">
                 </div>
@@ -52,14 +57,16 @@
                 <br>
 
                 <div class="input-container" id="message-field"
-                [ngClass]="{ 'is-invalid': f.submitted && message.errors }">
-                <label for="message"></label>
-                <textarea class="form-control" name="message" [(ngModel)]="form.message" minlength="4"
-                    #message="ngModel" placeholder="Your message" required></textarea>
-                <img *ngIf="f.submitted && message.errors" src="../../../assets/img/icons/red-mark.png"
-                    class="error-icon" alt="Error">
-            </div>
-            @if (f.submitted && message.errors) {
+                    [ngClass]="{ 'is-invalid': f.submitted && message.errors, 'is-valid': message.valid }">
+                    <label for="message"></label>
+                    <textarea class="form-control" name="message" [(ngModel)]="form.message" minlength="4"
+                        #message="ngModel" placeholder="Your message" required></textarea>
+                    <img *ngIf="message.valid" src="../../../assets/img/icons/green-mark.png" class="success-icon"
+                        alt="Success">
+                    <img *ngIf="f.submitted && message.errors" src="../../../assets/img/icons/red-mark.png"
+                        class="error-icon" alt="Error">
+                </div>
+                @if (f.submitted && message.errors) {
                 <div class="invalid-feedback">
                     @if (message.errors['required']) {
                     <div>Your message is empty</div>
@@ -69,8 +76,8 @@
                     }
                 </div>
                 <br>
-            }
-            
+                }
+
 
                 <div class="checkbox-div">
                     <input type="checkbox" class="form-control" name="acceptPolicy" [(ngModel)]="form.acceptPolicy"
@@ -87,7 +94,13 @@
 
                 <br>
 
-                <button id="sendButton" type="submit">Send message :)</button>
+                <button id="sendButton" type="submit"
+                    [ngClass]="{ 'valid': f.form.valid, 'success': submitStatus === 'success', 'loading': submitStatus === 'loading' }">
+                    <div *ngIf="submitStatus === 'loading'" class="loading-spinner"></div>
+                    {{ getButtonStatusText() }}
+                </button>
+
+
             </form>
             <a href="#" class="scroll-up"><img src="../../../assets/img/icons/up-white.png" alt="arrow up"></a>
         </div>
