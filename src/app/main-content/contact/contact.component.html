@@ -38,7 +38,7 @@
                     [ngClass]="{ 'is-invalid': f.submitted && email.errors, 'is-valid': email.valid }">
                     <label for="email"></label>
                     <input type="email" class="form-control" name="email" [(ngModel)]="form.email" email
-                        #email="ngModel" placeholder="Your email" required>
+                        #email="ngModel" placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"  required>
                     <img *ngIf="email.valid" src="../../../assets/img/icons/green-mark.png" class="success-icon"
                         alt="Success">
                     <img *ngIf="f.submitted && email.errors" src="../../../assets/img/icons/red-mark.png"

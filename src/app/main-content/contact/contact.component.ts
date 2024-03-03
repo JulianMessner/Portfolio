@@ -1,5 +1,6 @@
 import { CommonModule, NgSwitch } from '@angular/common';
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
@@ -10,6 +11,8 @@ import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+  http = inject(HttpClient);
+
   form = {
     fullname: '',
     email: '',
@@ -19,17 +22,54 @@ export class ContactComponent {
 
   submitStatus: 'idle' | 'loading' | 'success' = 'idle';
 
-  onSubmit(form: NgForm): void {
-    this.submitStatus = 'loading';
-    
-    setTimeout(() => {
-      console.log(JSON.stringify(this.form));
-      form.resetForm();
-      this.submitStatus = 'success';
+  // onSubmit(form: NgForm): void {
+  //   this.submitStatus = 'loading';
+
+  //   setTimeout(() => {
+  //     console.log(JSON.stringify(this.form));
+  //     form.resetForm();
+  //     this.submitStatus = 'success';
+  //     setTimeout(() => {
+  //       this.submitStatus = 'idle';
+  //     }, 2000);
+  //   }, 2000);
+  // }
+
+  mailTest = true;
+
+  post = {
+    endPoint: 'https://deineDomain.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.http.post(this.post.endPoint, this.post.body(this.form)).subscribe({
+        next: (response) => {
+          (this.submitStatus = 'loading'), ngForm.resetForm();
+        },
+        error: (error) => {
+          console.error(error);
+        },
+        complete: () => {
+          console.info('send post complete'),
+            setTimeout(() => {
+              this.submitStatus = 'success';
+            }, 2000);
+        },
+      });
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       setTimeout(() => {
         this.submitStatus = 'idle';
       }, 2000);
-    }, 2000);
+      ngForm.resetForm();
+    }
   }
 
   getButtonStatusText(): string {

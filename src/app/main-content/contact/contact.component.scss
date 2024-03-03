@@ -19,7 +19,7 @@
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 }
 
 .contact-container {
@@ -52,6 +52,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   > #name-field,
   #email-field {
     width: 100%;
@@ -167,6 +168,8 @@ form {
 }
 
 #sendButton {
+  position: absolute;
+  top: 500px;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -227,12 +230,15 @@ form {
   display: flex;
   flex-direction: column;
   align-items: end;
+  position: relative;
 }
 
 .scroll-up {
   padding: 0;
   margin: 0;
   margin-right: 75px;
+  position: absolute;
+  top: 600px;
   > img {
     height: 39px;
     width: 39px;
