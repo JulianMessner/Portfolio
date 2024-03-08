@@ -6,8 +6,16 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
+  isResponsiveNavVisible = false;
 
+  toggleResponsiveNav() {
+    this.isResponsiveNavVisible = !this.isResponsiveNavVisible;
+  }
+
+  closeResponsiveNav() {
+    this.isResponsiveNavVisible = false;
+  }
 }

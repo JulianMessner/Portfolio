@@ -10,10 +10,10 @@ import { Component } from '@angular/core';
 })
 export class ProjectLeftComponent {
   imageSrcArray = [
+    '../../../../assets/img/projects/join-project2.png',
+    '../../../../assets/img/projects/el-pollo-loco.png',
     '../../../../assets/img/projects/pc-mockup.png',
-    '../../../../assets/img/projects/pc-mockup.png',
-    '../../../../assets/img/projects/pc-mockup.png',
-    '../../../../assets/img/projects/pc-mockup.png',
+    '../../../../assets/img/projects/pokedex.png',
     '../../../../assets/img/projects/pc-mockup.png',
     '../../../../assets/img/projects/pc-mockup.png',
     '../../../../assets/img/projects/pc-mockup.png',
@@ -48,8 +48,8 @@ export class ProjectLeftComponent {
   ];
   githubLinkArray = [
     'https://github.com/project1',
-    'https://github.com/project2',
+    'https://github.com/JulianMessner/El-Pollo-Loco',
     'https://github.com/project3',
-    'https://github.com/project4',
+    'https://github.com/JulianMessner/Pok-dex',
   ];
 }

@@ -1,5 +1,5 @@
 .header {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   z-index: 5;
 }
@@ -15,32 +15,111 @@
   font-size: 23px;
   padding-left: 100px;
   padding-right: 100px;
-  > a img {
-    border-radius: 50%;
-    object-fit: cover;
-    height: 50px;
-    width: auto;
+}
+
+.header-logo {
+  position: relative;
+}
+
+.header-logo a img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 50px;
+  width: auto;
+}
+
+.nav-links {
+  gap: 29px;
+  display: flex;
+  align-items: center;
+  > a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    &:hover {
+      color: #00bee8;
+      cursor: pointer;
+    }
   }
-  > .nav-links {
-    gap: 29px;
+}
+
+.responsive-nav {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  position: fixed;
+  background-color: rgba(65, 72, 86, 0.9);
+  justify-content: center;
+  align-items: center;
+  > .nav-links-responsive {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 40px;
     > a {
       color: white;
       text-decoration: none;
       font-size: 23px;
       &:hover {
-        color: #00bee8;
-        cursor: pointer;
+        filter: brightness(0) saturate(100%) invert(53%) sepia(97%)
+          saturate(1347%) hue-rotate(150deg) brightness(97%) contrast(101%);
       }
     }
   }
 }
 
+.responsive-nav.show {
+  display: flex;
+  position: fixed;
+  top: 0;
+  animation: slideInRight 500ms ease-in-out;
+}
+
+#close-navbar {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(53%) sepia(97%) saturate(1347%)
+      hue-rotate(150deg) brightness(97%) contrast(101%);
+  }
+}
+
+#responsive-nav-icon {
+  display: none;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(53%) sepia(97%) saturate(1347%)
+      hue-rotate(150deg) brightness(97%) contrast(101%);
+  }
+}
+
+#responsive-nav-icon.hide {
+  display: none;
+}
+
+.showIcon {
+  display: block;
+}
 
 @media screen and (max-width: 1200px) {
   .header-content {
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .header-content {
+    > .nav-links {
+      display: none;
+    }
+  }
+  #responsive-nav-icon {
+    display: block;
   }
 }

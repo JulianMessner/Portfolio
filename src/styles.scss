@@ -7,18 +7,46 @@
 /* poppins-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url('../src/assets/fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../src/assets/fonts/poppins-v20-latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* poppins-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  src: url('../src/assets/fonts/poppins-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../src/assets/fonts/poppins-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
 
 body {
@@ -31,7 +59,8 @@ body {
   background-color: #151d2f;
   overflow-x: hidden;
 
-  background-image: url(./assets/img/background/purpe-shade1.png), url(./assets/img/background/vector.png);
+  background-image: url(./assets/img/background/purpe-shade1.png),
+    url(./assets/img/background/vector.png);
   background-position: right -500px top 500px, 0px 350px;
   background-size: 50%, 100%;
   background-repeat: no-repeat, no-repeat;
@@ -46,17 +75,29 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #4B47FF;
+  background-color: #4b47ff;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #00BEE8;
+  background-color: #00bee8;
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background-color: #00BEE8;
+  background-color: #00bee8;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@media screen and (max-width: 520px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
