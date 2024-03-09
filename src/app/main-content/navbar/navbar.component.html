@@ -14,11 +14,12 @@
     </div>
 
 
-    <div class="responsive-nav" [ngClass]="{'show': isResponsiveNavVisible}"> <img id="close-navbar"
+    <div class="responsive-nav" [ngClass]="{'show': isResponsiveNavVisible}"> 
+        <img id="close-navbar"
             src="../../../assets/img/icons/close-navbar.png" alt="close navbar" (click)="toggleResponsiveNav()">
-            <div class="nav-links-responsive">
-                <a (click)="closeResponsiveNav()" href="#about-me-section">About me</a>
-                <a (click)="closeResponsiveNav()" href="#skills-section">Skills</a>
-                <a (click)="closeResponsiveNav()" href="#portfolio-section">Portfolio</a>
-            </div>
+        <div class="nav-links-responsive">
+            <a (click)="closeResponsiveNav()" href="#about-me-section">About me</a>
+            <a (click)="closeResponsiveNav()" href="#skills-section">Skills</a>
+            <a (click)="closeResponsiveNav()" href="#portfolio-section">Portfolio</a>
+        </div>
     </div>
