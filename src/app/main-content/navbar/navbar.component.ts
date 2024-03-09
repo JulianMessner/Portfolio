@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
   isResponsiveNavVisible = false;
+  slideOut = false;
 
   toggleResponsiveNav() {
     this.isResponsiveNavVisible = !this.isResponsiveNavVisible;
@@ -17,5 +18,9 @@ export class NavbarComponent {
 
   closeResponsiveNav() {
     this.isResponsiveNavVisible = false;
+    this.slideOut = true;
+    setTimeout(() =>{
+      this.slideOut = false;
+    }, 500)
   }
 }

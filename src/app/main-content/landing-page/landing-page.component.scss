@@ -23,6 +23,13 @@
   }
 }
 
+#vector-image{
+  position: absolute;
+  z-index: -1;
+  top: 320px;
+  width: 100%;
+}
+
 #bg-image {
   position: absolute;
   top: -10px;
@@ -220,6 +227,10 @@
     }
   }
 
+  #vector-image{
+    top: 300px;
+  }
+
   #bg-image {
     height: 350px;
   }
@@ -245,6 +256,10 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 70px;
+  }
+
+  #vector-image{
+    top: 350px;
   }
 
   .image-group {

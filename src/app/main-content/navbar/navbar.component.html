@@ -14,9 +14,8 @@
     </div>
 
 
-    <div class="responsive-nav" [ngClass]="{'show': isResponsiveNavVisible}"> 
-        <img id="close-navbar"
-            src="../../../assets/img/icons/close-navbar.png" alt="close navbar" (click)="toggleResponsiveNav()">
+    <div class="responsive-nav" [ngClass]="{'show': isResponsiveNavVisible, 'hideDiv': slideOut}">        <img id="close-navbar"
+            src="../../../assets/img/icons/close-navbar.png" alt="close navbar" (click)="closeResponsiveNav()">
         <div class="nav-links-responsive">
             <a (click)="closeResponsiveNav()" href="#about-me-section">About me</a>
             <a (click)="closeResponsiveNav()" href="#skills-section">Skills</a>

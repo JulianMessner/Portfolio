@@ -52,6 +52,7 @@
   background-color: rgba(65, 72, 86, 0.9);
   justify-content: center;
   align-items: center;
+  animation: slideOutRight 500ms ease-in-out;
   > .nav-links-responsive {
     display: flex;
     flex-direction: column;
@@ -69,11 +70,20 @@
   }
 }
 
+
 .responsive-nav.show {
   display: flex;
   position: fixed;
   top: 0;
   animation: slideInRight 500ms ease-in-out;
+}
+
+.responsive-nav.hideDiv{
+  display: flex;
+  position: fixed;
+  top: 0;
+  animation: slideOutRight 500ms ease-in-out;
+
 }
 
 #close-navbar {
