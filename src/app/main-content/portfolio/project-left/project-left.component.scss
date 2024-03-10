@@ -17,9 +17,10 @@
   align-items: center;
   width: 100%;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-.headline{
+.headline {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -30,15 +31,15 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  >.line1{
+  > .line1 {
     height: 0;
     width: 110px;
-    border: 2px solid #4B47FF;
+    border: 2px solid #4b47ff;
   }
-  >.line2{
+  > .line2 {
     height: 0;
     width: 500px;
-    border: 2px solid #4B47FF;
+    border: 2px solid #4b47ff;
   }
 }
 
@@ -46,6 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 100px;
   &.reverse-order {
     flex-direction: row-reverse;
     > .portfolio-description {
@@ -57,7 +59,7 @@
     }
   }
   > img {
-    height: 500px;
+    height: 300px;
     // margin-right: 100px;
   }
 }
@@ -119,6 +121,11 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .headline {
+    > h2 {
+      font-size: 57px;
+    }
+  }
   .portfolio-full-page {
     justify-content: space-between;
     margin-left: 50px;
@@ -131,7 +138,7 @@
   }
 
   .portfolio-content img {
-    height: 400px;
+    height: 250px;
   }
 
   .portfolio-description {
@@ -145,8 +152,95 @@
       padding: 10px 20px 10px 20px;
     }
 
-    > .github-link{
+    > .github-link {
       padding: 10px 20px 10px 20px;
     }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio-content img {
+    height: 200px;
+  }
+
+  .links {
+    > .project-link {
+      font-size: 16px;
+    }
+
+    > .github-link {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .portfolio-header{
+    >p{
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+  .portfolio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > .portfolio-description {
+      text-align: center;
+    }
+    &.reverse-order {
+      flex-direction: column;
+      text-align: center;
+      > .portfolio-description {
+        align-items: center;
+        > p {
+          margin-right: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .portfolio-content img {
+    height: 250px;
+    margin-bottom: 50px;
+  }
+
+  .links {
+    > .project-link {
+      font-size: 16px;
+    }
+
+    > .github-link {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .portfolio-header{
+    >p{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .headline h2{
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .portfolio-content img {
+    height: 200px;
+    margin-bottom: 50px;
+  }
+
+  .portfolio-description{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .portfolio-description{
+    width: 300px;
   }
 }
