@@ -99,6 +99,7 @@
 
 .landing-page-bottom {
   display: flex;
+  position: relative;
   justify-content: space-between;
   animation: slideInLeft 700ms ease-in-out;
 }
@@ -151,8 +152,8 @@
   height: auto;
   font-size: 18px;
   position: absolute;
-  right: -60px;
-  top: 555px;
+  right: -20px;
+  top: 0px;
   padding-right: 100px;
   animation: bounce 2s infinite;
   > img {
@@ -202,6 +203,10 @@
       font-size: 18px;
     }
   }
+
+  .scroll-down {
+    right: -70px;
+  }
 }
 
 @media screen and (max-width: 1020px) {
@@ -237,7 +242,6 @@
   }
 
   .scroll-down {
-    top: 500px;
     right: -65px;
   }
 
@@ -270,9 +274,6 @@
   }
   .landing-page-content-right {
     margin-top: 10px;
-  }
-  .scroll-down {
-    top: 650px;
   }
 }
 
