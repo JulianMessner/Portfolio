@@ -33,7 +33,8 @@ span{
     width: 180px;
 }
 
-.link-div{
+.link-div,
+.link-div-responsive{
     padding-left: 15px;
     >a{
         text-decoration: none;
@@ -41,6 +42,16 @@ span{
         &:hover{
             border-bottom: 2px solid #00bfe8;
             width: 30px;
+        }
+    }
+}
+
+.link-div-responsive{
+    padding: 0;
+    display: none;
+    >a{
+        &:hover{
+            width: auto;
         }
     }
 }
@@ -64,5 +75,72 @@ span{
     .footer-full-content {
       margin-left: 50px;
       margin-right: 50px;
+    }
+  }
+
+
+  @media screen and (max-width: 1020px) {
+    .logo-and-imprint{
+        align-items: center;
+        width: 100px;
+    }
+
+    .link-div{
+        padding-left: 0;
+    }
+
+    .social-links{
+        width: 120px;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .logo-and-imprint{
+        >img{
+            height: 30px;
+        }
+    }
+
+    .social-links{
+        >img{
+            height: 30px;
+        }
+    }
+
+    span{
+        font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .footer-full-content{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .link-div{
+        display: none;
+    }
+
+    .link-div-responsive{
+        display: flex;
+    }
+
+    .logo-and-imprint{
+        >img{
+            height: 40px;
+        }
+    }
+
+    .social-links{
+        gap: 42px;
+        width: auto;
+        >img{
+            height: 35px;
+        }
+    }
+
+    span{
+        font-size: 16px;
     }
   }
