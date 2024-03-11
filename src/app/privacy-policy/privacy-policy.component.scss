@@ -4,8 +4,10 @@
   align-items: flex-end;
   margin-left: 100px;
   margin-right: 100px;
+  position: relative;
   > a {
     text-decoration: none;
+    position: absolute;
     color: white;
     background-color: #00bee8;
     border-radius: 10px;
@@ -22,6 +24,8 @@
 }
 
 .policy-content {
+  margin-top: 150px;
+  width: 100%;
   > a {
     color: white;
     &:hover {
@@ -44,4 +48,29 @@
 
 .seal{
     margin-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .full-page{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+.full-page{
+  >a{
+    padding: 10px 20px 10px 20px;
+    &:hover{
+      padding: 15px 25px;
+    }
+  }
+}
+}
+
+@media screen and (max-width: 520px) {
+  .full-page{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
