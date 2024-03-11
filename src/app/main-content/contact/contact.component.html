@@ -12,86 +12,88 @@
         </div>
         <div class="form-scroll-up">
             <form name="form" #f="ngForm" (ngSubmit)="f.form.valid && onSubmit(f)" novalidate>
-                <div class="input-container" id="name-field"
-                    [ngClass]="{ 'is-invalid': f.submitted && fullname.errors, 'is-valid': fullname.valid }">
-                    <label for="name"></label>
-                    <input type="text" class="form-control" name="fullname" [(ngModel)]="form.fullname"
-                        #fullname="ngModel" placeholder="Your name" required minlength="2">
-                    <img *ngIf="fullname.valid" src="../../../assets/img/icons/green-mark.png" class="success-icon"
-                        alt="Success">
-                    <img *ngIf="f.submitted && fullname.errors" src="../../../assets/img/icons/red-mark.png"
-                        class="error-icon" alt="Error">
-                </div>
-                @if (f.submitted && fullname.errors) {
-                <div class="invalid-feedback">
-                    @if (fullname.errors['required']) {
-                    <div>Your name is required</div>
+                <div class="form-content">
+                    <div class="input-container" id="name-field"
+                        [ngClass]="{ 'is-invalid': f.submitted && fullname.errors, 'is-valid': fullname.valid }">
+                        <label for="name"></label>
+                        <input type="text" class="form-control" name="fullname" [(ngModel)]="form.fullname"
+                            #fullname="ngModel" placeholder="Your name" required minlength="2">
+                        <img *ngIf="fullname.valid" src="../../../assets/img/icons/green-mark.png" class="success-icon"
+                            alt="Success">
+                        <img *ngIf="f.submitted && fullname.errors" src="../../../assets/img/icons/red-mark.png"
+                            class="error-icon" alt="Error">
+                    </div>
+                    @if (f.submitted && fullname.errors) {
+                    <div class="invalid-feedback">
+                        @if (fullname.errors['required']) {
+                        <div>Your name is required</div>
+                        }
+                        @if (fullname.errors['minlength']) {
+                        <div>Your name must contain at least 2 characters</div>
+                        }
+                    </div>
                     }
-                    @if (fullname.errors['minlength']) {
-                    <div>Your name must contain at least 2 characters</div>
+                    <br>
+
+                    <div class="input-container" id="email-field"
+                        [ngClass]="{ 'is-invalid': f.submitted && email.errors, 'is-valid': email.valid }">
+                        <label for="email"></label>
+                        <input type="email" class="form-control" name="email" [(ngModel)]="form.email" email
+                            #email="ngModel" placeholder="Your email"
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                        <img *ngIf="email.valid" src="../../../assets/img/icons/green-mark.png" class="success-icon"
+                            alt="Success">
+                        <img *ngIf="f.submitted && email.errors" src="../../../assets/img/icons/red-mark.png"
+                            class="error-icon" alt="Error">
+                    </div>
+                    @if (f.submitted && email.errors) {
+                    <div class="invalid-feedback">
+                        @if (email.errors['required']) {
+                        <div>Your email is required</div>
+                        }
+                        @if (email.errors['email']) {
+                        <div>Your email is invalid</div>
+                        }
+                    </div>
+                    }
+                    <br>
+
+                    <div class="input-container" id="message-field"
+                        [ngClass]="{ 'is-invalid': f.submitted && message.errors, 'is-valid': message.valid }">
+                        <label for="message"></label>
+                        <textarea class="form-control" name="message" [(ngModel)]="form.message" minlength="4"
+                            #message="ngModel" placeholder="Your message" required></textarea>
+                        <img *ngIf="message.valid" src="../../../assets/img/icons/green-mark.png" class="success-icon"
+                            alt="Success">
+                        <img *ngIf="f.submitted && message.errors" src="../../../assets/img/icons/red-mark.png"
+                            class="error-icon" alt="Error">
+                    </div>
+                    @if (f.submitted && message.errors) {
+                    <div class="invalid-feedback">
+                        @if (message.errors['required']) {
+                        <div>Your message is empty</div>
+                        }
+                        @if (message.errors['minlength']) {
+                        <div>Your message must contain at least 4 characters</div>
+                        }
+                    </div>
+                    <br>
+                    }
+
+                    <div class="checkbox-div">
+                        <input type="checkbox" class="form-control" name="acceptPolicy" [(ngModel)]="form.acceptPolicy"
+                            class="form-check-input" required #acceptPolicy="ngModel"
+                            [ngClass]="{ 'is-invalid-checkbox': f.submitted && acceptPolicy.errors }">
+                        <label for="privacy-policy" id="checkbox-text">I read the <a href="privacy-policy"
+                                target="_blank">privacy policy</a> and agree
+                            to
+                            the processing of my data as outlined.</label>
+
+                    </div>
+                    @if (f.submitted && acceptPolicy.errors) {
+                    <div class="invalid-feedback">Please accept the privacy policy</div>
                     }
                 </div>
-                }
-                <br>
-
-                <div class="input-container" id="email-field"
-                    [ngClass]="{ 'is-invalid': f.submitted && email.errors, 'is-valid': email.valid }">
-                    <label for="email"></label>
-                    <input type="email" class="form-control" name="email" [(ngModel)]="form.email" email
-                        #email="ngModel" placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"  required>
-                    <img *ngIf="email.valid" src="../../../assets/img/icons/green-mark.png" class="success-icon"
-                        alt="Success">
-                    <img *ngIf="f.submitted && email.errors" src="../../../assets/img/icons/red-mark.png"
-                        class="error-icon" alt="Error">
-                </div>
-                @if (f.submitted && email.errors) {
-                <div class="invalid-feedback">
-                    @if (email.errors['required']) {
-                    <div>Your email is required</div>
-                    }
-                    @if (email.errors['email']) {
-                    <div>Your email is invalid</div>
-                    }
-                </div>
-                }
-                <br>
-
-                <div class="input-container" id="message-field"
-                    [ngClass]="{ 'is-invalid': f.submitted && message.errors, 'is-valid': message.valid }">
-                    <label for="message"></label>
-                    <textarea class="form-control" name="message" [(ngModel)]="form.message" minlength="4"
-                        #message="ngModel" placeholder="Your message" required></textarea>
-                    <img *ngIf="message.valid" src="../../../assets/img/icons/green-mark.png" class="success-icon"
-                        alt="Success">
-                    <img *ngIf="f.submitted && message.errors" src="../../../assets/img/icons/red-mark.png"
-                        class="error-icon" alt="Error">
-                </div>
-                @if (f.submitted && message.errors) {
-                <div class="invalid-feedback">
-                    @if (message.errors['required']) {
-                    <div>Your message is empty</div>
-                    }
-                    @if (message.errors['minlength']) {
-                    <div>Your message must contain at least 4 characters</div>
-                    }
-                </div>
-                <br>
-                }
-
-
-                <div class="checkbox-div">
-                    <input type="checkbox" class="form-control" name="acceptPolicy" [(ngModel)]="form.acceptPolicy"
-                        class="form-check-input" required #acceptPolicy="ngModel"
-                        [ngClass]="{ 'is-invalid-checkbox': f.submitted && acceptPolicy.errors }">
-                    <label for="privacy-policy" id="checkbox-text">I read the <a href="privacy-policy" target="_blank">privacy policy</a> and agree
-                        to
-                        the processing of my data as outlined.</label>
-
-                </div>
-                @if (f.submitted && acceptPolicy.errors) {
-                <div class="invalid-feedback">Please accept the privacy policy</div>
-                }
-
                 <br>
 
                 <button id="sendButton" type="submit"

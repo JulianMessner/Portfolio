@@ -23,7 +23,7 @@
   }
 }
 
-#vector-image{
+#vector-image {
   position: absolute;
   z-index: -1;
   top: 320px;
@@ -233,7 +233,7 @@
     }
   }
 
-  #vector-image{
+  #vector-image {
     top: 300px;
   }
 
@@ -263,7 +263,7 @@
     margin-bottom: 70px;
   }
 
-  #vector-image{
+  #vector-image {
     top: 350px;
   }
 
@@ -346,6 +346,11 @@
       > #job-name {
         font-size: 22px;
       }
+    }
+  }
+  .contact-right {
+    > .line {
+      width: 60px;
     }
   }
 }

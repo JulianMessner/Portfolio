@@ -35,7 +35,7 @@ export class ProjectLeftComponent {
     'https://example.com/live-test-4',
   ];
   githubLinkArray = [
-    'https://github.com/project1',
+    'https://github.com/JulianMessner/JOIN',
     'https://github.com/JulianMessner/El-Pollo-Loco',
     // 'https://github.com/project3',
     'https://github.com/JulianMessner/Pok-dex',
