@@ -1,3 +1,25 @@
+.section-left{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.section-right{
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fly-in-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fly-in-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .about-me-container {
   display: flex;
   align-items: center;

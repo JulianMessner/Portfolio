@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-project-left',
@@ -29,10 +29,10 @@ export class ProjectLeftComponent {
     'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
   ];
   liveTestLinkArray = [
-    'https://example.com/live-test-1',
-    'https://example.com/live-test-2',
+    'https://julian-johannes-messner.developerakademie.net/Join-Project/html/index.html',
+    'https://julian-johannes-messner.developerakademie.net/el_pollo_loco/index.html',
     // 'https://example.com/live-test-3',
-    'https://example.com/live-test-4',
+    'https://julian-johannes-messner.developerakademie.net/pokedex/index.html',
   ];
   githubLinkArray = [
     'https://github.com/JulianMessner/JOIN',
@@ -40,4 +40,19 @@ export class ProjectLeftComponent {
     // 'https://github.com/project3',
     'https://github.com/JulianMessner/Pok-dex',
   ];
+
+  isScrolledIntoView = false;
+
+  constructor(private el: ElementRef) {}
+
+  @HostListener('window:scroll', [])
+  onScroll() {
+      const rect = this.el.nativeElement.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+        const isPartiallyInView = rect.top <= windowHeight && rect.bottom >= 500;
+  
+      if (!this.isScrolledIntoView && isPartiallyInView) {
+          this.isScrolledIntoView = true;
+      }
+  }
 }

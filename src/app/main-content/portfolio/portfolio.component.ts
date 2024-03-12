@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener, ElementRef } from '@angular/core';
 import { ProjectLeftComponent } from './project-left/project-left.component';
 
 @Component({
@@ -10,5 +10,4 @@ import { ProjectLeftComponent } from './project-left/project-left.component';
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
-
 }

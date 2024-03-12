@@ -1,3 +1,26 @@
+.portfolio-content{
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.portfolio-header,
+.reverse-order{
+opacity: 0;
+transform: translateX(100px);
+transition: opacity 1s ease, transform 1s ease;
+}
+
+.fly-in-left {
+opacity: 1;
+transform: translateX(0);
+}
+
+.fly-in-right {
+opacity: 1;
+transform: translateX(0);
+}
+
 .margin-container {
   width: 100%;
 }

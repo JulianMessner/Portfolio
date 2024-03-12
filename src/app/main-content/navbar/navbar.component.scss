@@ -22,7 +22,6 @@
 }
 
 .header-logo a img {
-  border-radius: 50%;
   object-fit: cover;
   height: 50px;
   width: auto;
@@ -123,6 +122,17 @@
   }
 }
 
+@media screen and (max-width: 640px) {
+  .header-content {
+    > .nav-links {
+      display: none;
+    }
+  }
+  #responsive-nav-icon {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 520px) {
   .header-content {
     padding-left: 20px;
@@ -130,8 +140,5 @@
     > .nav-links {
       display: none;
     }
-  }
-  #responsive-nav-icon {
-    display: block;
   }
 }

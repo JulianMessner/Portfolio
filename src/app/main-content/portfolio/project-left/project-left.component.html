@@ -1,4 +1,4 @@
-<div class="portfolio-header">
+<div class="portfolio-header" [ngClass]="{'fly-in-right': isScrolledIntoView}">
     <div class="headline">
         <div class="line1"></div>
         <h2>Portfolio</h2>
@@ -8,7 +8,7 @@
 </div>
 <div class="margin-container">
     <div class="portfolio-full-page">
-        <div *ngFor="let index of [0, 1, 2]" class="portfolio-content" [class.reverse-order]="index === 1">
+        <div *ngFor="let index of [0, 1, 2]" class="portfolio-content" [class.reverse-order]="index === 1" [ngClass]="{'fly-in-left': isScrolledIntoView && index !== 1, 'fly-in-right': isScrolledIntoView && index === 1}">
             <img [src]="imageSrcArray[index]" alt="">
             <div class="portfolio-description">
                 <h3>{{ h3TitleArray[index] }}</h3>

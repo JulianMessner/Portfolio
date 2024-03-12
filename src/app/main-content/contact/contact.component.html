@@ -1,16 +1,16 @@
-<div class="contact-header">
+<div class="contact-header" [ngClass]="{'fly-in-left': isScrolledIntoView}">
     <div class="line"></div>
     <h2>Contact</h2>
 </div>
 <div class="full-contact-section">
     <div class="contact-container">
-        <div class="contact-text">
+        <div class="contact-text" [ngClass]="{'fly-in-left': isScrolledIntoView}">
             <h3>Got a problem to solve?</h3>
             <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to
                 your projects with my work.</p>
             <p>Need a Frontend developer? <b>Contact me!</b></p>
         </div>
-        <div class="form-scroll-up">
+        <div class="form-scroll-up" [ngClass]="{'fly-in-right': isScrolledIntoView}">
             <form name="form" #f="ngForm" (ngSubmit)="f.form.valid && onSubmit(f)" novalidate>
                 <div class="form-content">
                     <div class="input-container" id="name-field"
@@ -104,7 +104,7 @@
 
 
             </form>
-            <a href="#" class="scroll-up"><img src="../../../assets/img/icons/up-white.png" alt="arrow up"></a>
+            <a href="#" class="scroll-up"><img src="../../../assets/img/icons/up-white2.png" alt="arrow up"></a>
         </div>
     </div>
 </div>

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
@@ -9,5 +9,18 @@ import { Component } from '@angular/core';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
+  isScrolledIntoView = false;
 
+  constructor(private el: ElementRef) {}
+
+  @HostListener('window:scroll', [])
+  onScroll() {
+      const rect = this.el.nativeElement.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+        const isPartiallyInView = rect.top <= windowHeight && rect.bottom >= 500;
+  
+      if (!this.isScrolledIntoView && isPartiallyInView) {
+          this.isScrolledIntoView = true;
+      }
+  }
 }

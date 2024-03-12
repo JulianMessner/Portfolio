@@ -1,6 +1,6 @@
 import { CommonModule, NgSwitch } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, inject, HostListener, ElementRef } from '@angular/core';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
@@ -11,6 +11,21 @@ import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+  isScrolledIntoView = false;
+
+  constructor(private el: ElementRef) {}
+
+  @HostListener('window:scroll', [])
+  onScroll() {
+      const rect = this.el.nativeElement.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+        const isPartiallyInView = rect.top <= windowHeight && rect.bottom >= 500;
+  
+      if (!this.isScrolledIntoView && isPartiallyInView) {
+          this.isScrolledIntoView = true;
+      }
+  }
+
   http = inject(HttpClient);
 
   form = {

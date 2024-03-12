@@ -5,6 +5,7 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { NavbarComponent } from './main-content/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     ImprintComponent,
     MainContentComponent,
     PrivacyPolicyComponent,
-    FooterComponent
+    FooterComponent, NavbarComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
