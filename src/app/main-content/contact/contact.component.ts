@@ -51,7 +51,7 @@ export class ContactComponent {
 // }
 
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://julian-messner.com/sendMail.php',
@@ -64,21 +64,23 @@ export class ContactComponent {
     },
   };
 
+
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.form)).subscribe({
         next: (response) => {
-          (this.submitStatus = 'loading'), ngForm.resetForm();
+          this.submitStatus = 'loading';
+          setTimeout(() => {
+            this.submitStatus = 'success';
+            ngForm.resetForm();
+            setTimeout(() => {
+              this.submitStatus = 'idle';
+            }, 2000);
+          }, 2000);
         },
         error: (error) => {
           console.error(error);
-        },
-        complete: () => {
-          console.info('send post complete'),
-            setTimeout(() => {
-              this.submitStatus = 'success';
-            }, 2000);
-        },
+        }
       });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       setTimeout(() => {
@@ -86,7 +88,8 @@ export class ContactComponent {
       }, 2000);
       ngForm.resetForm();
     }
-  }
+  }  
+  
 
   getButtonStatusText(): string {
     switch (this.submitStatus) {

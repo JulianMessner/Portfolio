@@ -18,7 +18,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $name = $params->name;
             $message = $params->message;
     
-            $recipient = 'julian.messner22@gmail.com';  
+            $recipient = 'julianmessner.22@gmail.com';  
             $subject = "Contact From <$email>";
             $message = "From:" . $name . "<br>" . $message ;
     
@@ -35,3 +35,5 @@ switch ($_SERVER['REQUEST_METHOD']) {
             header("Allow: POST", true, 405);
             exit;
     } 
+
+?>
