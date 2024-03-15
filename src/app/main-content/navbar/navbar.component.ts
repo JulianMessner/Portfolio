@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss',
-})
+  styleUrls: ['./navbar.component.scss', './responsive-navbar.component.scss']})
+  
 export class NavbarComponent {
   isResponsiveNavVisible = false;
   slideOut = false;

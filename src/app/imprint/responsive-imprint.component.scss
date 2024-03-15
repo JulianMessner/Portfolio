@@ -1,0 +1,24 @@
+@media screen and (max-width: 1200px) {
+    .full-page{
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 1020px) {
+  .full-page{
+    >a{
+      padding: 10px 20px 10px 20px;
+      &:hover{
+        padding: 15px 25px;
+      }
+    }
+  }
+  }
+  
+  @media screen and (max-width: 520px) {
+    .full-page{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }

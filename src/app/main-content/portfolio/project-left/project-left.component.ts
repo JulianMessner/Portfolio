@@ -6,7 +6,7 @@ import { Component, HostListener, ElementRef } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './project-left.component.html',
-  styleUrl: './project-left.component.scss',
+  styleUrls: ['./project-left.component.scss', './responsive-project-left.component.scss']
 })
 export class ProjectLeftComponent {
   imageSrcArray = [

@@ -6,7 +6,7 @@ import { Component, HostListener, ElementRef } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './about-me.component.html',
-  styleUrl: './about-me.component.scss'
+  styleUrls: ['./about-me.component.scss', './responsive-about-me.component.scss']
 })
 export class AboutMeComponent {
   isScrolledIntoView = false;
