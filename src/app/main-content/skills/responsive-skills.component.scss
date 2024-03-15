@@ -1,0 +1,136 @@
+@media screen and (max-width: 1200px) {
+    .skills-full-content {
+      margin-left: 50px;
+      margin-right: 40px;
+    }
+  
+    .skills-text h2 {
+      font-size: 57px;
+    }
+  
+    .line {
+      top: 40px;
+      width: 120px;
+    }
+  }
+  
+  @media screen and (max-width: 1020px) {
+    .skills-text {
+      > .btn a {
+        padding: 10px 20px 10px 20px;
+        &:hover {
+          padding: 15px 25px 15px 25px;
+        }
+      }
+    }
+  
+    .line {
+      width: 90px;
+    }
+  }
+  
+  @media screen and (max-width: 890px) {
+    .skills-container {
+      margin-top: 0;
+      > .skills-icons {
+        margin-left: 20px;
+      }
+    }
+  
+    .skills-text {
+      margin-left: 5px;
+    }
+  
+    .skills-text h2 {
+      font-size: 55px;
+      width: 300px;
+    }
+  
+    .individual-icons {
+      > img {
+        height: 40px;
+        width: 40px;
+      }
+      > p {
+        font-size: 16px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .skills-full-content {
+      margin-top: 80px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skills-container {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      position: relative;
+      margin-top: 0;
+      > .skills-icons {
+        margin-left: 0px;
+        justify-content: center;
+        gap: 70px;
+      }
+    }
+  
+    .btn {
+      display: none;
+    }
+  
+    .btn.responsive {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      background-color: #00bee8;
+      border-radius: 10px;
+      padding: 10px 20px 10px 20px;
+      gap: 10px;
+      font-size: 23px;
+      transition: padding 0.3s ease-in-out;
+      width: 140px;
+      > a {
+        text-decoration: none;
+        border: none;
+        color: white;
+      }
+      &:hover {
+        cursor: pointer;
+        padding: 15px 25px;
+        background-color: #4b47ff;
+      }
+    }
+  
+    .line {
+      right: -100px;
+      top: 30px;
+    }
+  
+    .skills-text {
+      align-items: end;
+      > h2 {
+        width: auto;
+        font-size: 40px;
+      }
+      > p {
+        text-align: end;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 520px) {
+    .skills-full-content{
+      margin-left: 10px;
+      margin-right: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .skills-container{
+    .skills-icons{
+      margin-left: 20px;
+      margin-right: 20px;
+    }}
+  }

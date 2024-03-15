@@ -1,0 +1,73 @@
+.contact-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    height: 50px;
+    > .line {
+      position: absolute;
+      left: 0;
+      width: 100px;
+      height: 0;
+      border: 2px solid #4b47ff;
+    }
+    > .social-icons {
+      display: flex;
+      align-items: center;
+      margin-left: 140px;
+      > a {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    > .social-icons img {
+      margin-right: 42px;
+      height: 30px;
+      width: 30px;
+      transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+      &:hover {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+    }
+    > .social-icons a {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  .scroll-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: rotate(90deg);
+    width: 140px;
+    height: auto;
+    font-size: 18px;
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    padding-right: 100px;
+    animation: bounce 2s infinite;
+    > img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+  
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0) rotate(90deg);
+    }
+    40% {
+      transform: translateY(-10px) rotate(90deg);
+    }
+    60% {
+      transform: translateY(-5px) rotate(90deg);
+    }
+  }

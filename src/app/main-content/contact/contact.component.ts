@@ -8,7 +8,7 @@ import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
   standalone: true,
   imports: [CommonModule, FormsModule, ReactiveFormsModule, NgSwitch],
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss', './responsive-contact.component.scss']
+  styleUrls: ['./contact.component.scss', './contact2.component.scss', './contact3.component.scss', './responsive-contact.component.scss']
 })
 export class ContactComponent {
   isScrolledIntoView = false;
