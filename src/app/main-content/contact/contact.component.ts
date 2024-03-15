@@ -37,23 +37,24 @@ export class ContactComponent {
 
   submitStatus: 'idle' | 'loading' | 'success' = 'idle';
 
-  // onSubmit(form: NgForm): void {
-  //   this.submitStatus = 'loading';
+//   onSubmit(form: NgForm): void {
+//     this.submitStatus = 'loading';
 
-  //   setTimeout(() => {
-  //     console.log(JSON.stringify(this.form));
-  //     form.resetForm();
-  //     this.submitStatus = 'success';
-  //     setTimeout(() => {
-  //       this.submitStatus = 'idle';
-  //     }, 2000);
-  //   }, 2000);
-  // }
+//     setTimeout(() => {
+//       console.log(JSON.stringify(this.form));
+//       form.resetForm();
+//       this.submitStatus = 'success';
+//       setTimeout(() => {
+//         this.submitStatus = 'idle';
+//       }, 2000);
+//     }, 2000);
+// }
+
 
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://julian-messner.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

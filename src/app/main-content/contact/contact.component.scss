@@ -45,6 +45,7 @@
   margin-top: 25px;
   margin-bottom: 200px;
   transform: translateX(0);
+  position: relative;
 }
 
 
@@ -328,6 +329,14 @@ input:-webkit-autofill:active {
   -webkit-text-fill-color: #ffffff;
 }
 
+#bg-img{
+  position: absolute;
+  z-index: -1;
+  height: 500px;
+  bottom: -200px;
+  left: -200px 
+}
+
 @media screen and (max-width: 1200px) {
   .full-contact-section{
     margin-left: 50px;
@@ -397,6 +406,11 @@ input:-webkit-autofill:active {
 
   .scroll-up{
     right: 0;
+  }
+
+  #bg-img{
+    height: 300px;
+    
   }
 }
 

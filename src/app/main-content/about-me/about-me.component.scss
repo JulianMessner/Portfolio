@@ -27,6 +27,7 @@
   margin-left: 100px;
   width: 100%;
   gap: 10%;
+  position: relative;
 }
 
 .section-left{
@@ -70,6 +71,14 @@
         padding-left: 50px;
         padding-right: 50px;
     }
+}
+
+#bg-img{
+  position: absolute;
+  height: 400px;
+  z-index: -1;
+  right: -200px;
+  top: -200px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -120,6 +129,10 @@
   .section-left{
     width: auto;
     max-width: 85%;
+  }
+
+  #bg-img{
+    right: -280px;
   }
 }
 
