@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener, ElementRef } from '@angular/core';
+import { LanguageService, Translation } from '../../language.service';
 
 @Component({
   selector: 'app-about-me',
@@ -9,9 +10,15 @@ import { Component, HostListener, ElementRef } from '@angular/core';
   styleUrls: ['./about-me.component.scss', './responsive-about-me.component.scss']
 })
 export class AboutMeComponent {
+  constructor(private el: ElementRef, private languageService: LanguageService) {}
+
+  getTranslation(key: keyof Translation): string {
+    return this.languageService.getTranslation(key);
+  }
+
   isScrolledIntoView = false;
 
-  constructor(private el: ElementRef) {}
+
 
   @HostListener('window:scroll', [])
   onScroll() {

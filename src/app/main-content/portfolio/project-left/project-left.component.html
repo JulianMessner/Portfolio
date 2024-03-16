@@ -4,19 +4,43 @@
         <h2>Portfolio</h2>
         <div class="line2"></div>
     </div>
-    <p>This page is a sample of my work! Scroll down to view other projects I have developed.</p>
+    <p>{{ getTranslation('portfolioText') }}</p>
 </div>
 <div class="margin-container">
     <div class="portfolio-full-page">
-        <div *ngFor="let index of [0, 1, 2]" class="portfolio-content" [class.reverse-order]="index === 1" [ngClass]="{'fly-in-left': isScrolledIntoView && index !== 1, 'fly-in-right': isScrolledIntoView && index === 1}">
-            <img [src]="imageSrcArray[index]" alt="">
+        <div class="portfolio-content" [ngClass]="{'fly-in-left': isScrolledIntoView}">
+            <img src="{{ imageSrcArray[0] }}" alt="">
             <div class="portfolio-description">
-                <h3>{{ h3TitleArray[index] }}</h3>
-                <h4>{{ h4TitleArray[index] }}</h4>
-                <p [class.reverse-text]="index === 1 || index === 2">{{ pTextArray[index] }}</p>
+                <h3>{{ h3TitleArray[0] }}</h3>
+                <h4>{{ h4TitleArray[0] }}</h4>
+                <p>{{ getTranslation('joinText') }}</p>
                 <div class="links">
-                    <a class="project-link" [href]="liveTestLinkArray[index]" target="_blank">Live test</a>
-                    <a class="github-link" [href]="githubLinkArray[index]" target="_blank">Github</a>
+                    <a class="project-link" href="{{ liveTestLinkArray[0] }}" target="_blank">{{ getTranslation('test') }}</a>
+                    <a class="github-link" href="{{ githubLinkArray[0] }}" target="_blank">Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-content reverse-order" [ngClass]="{'fly-in-right': isScrolledIntoView}">
+            <img src="{{ imageSrcArray[1] }}" alt="">
+            <div class="portfolio-description">
+                <h3>{{ h3TitleArray[1] }}</h3>
+                <h4>{{ h4TitleArray[1] }}</h4>
+                <p class="reverse-text">{{ getTranslation('eplText') }}</p>
+                <div class="links">
+                    <a class="project-link" href="{{ liveTestLinkArray[1] }}" target="_blank">{{ getTranslation('test') }}</a>
+                    <a class="github-link" href="{{ githubLinkArray[1] }}" target="_blank">Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-content" [ngClass]="{'fly-in-left': isScrolledIntoView}">
+            <img src="{{ imageSrcArray[2] }}" alt="">
+            <div class="portfolio-description">
+                <h3>{{ h3TitleArray[2] }}</h3>
+                <h4>{{ h4TitleArray[2] }}</h4>
+                <p>{{ getTranslation('pokedexText') }}</p>
+                <div class="links">
+                    <a class="project-link" href="{{ liveTestLinkArray[2] }}" target="_blank">{{ getTranslation('test') }}</a>
+                    <a class="github-link" href="{{ githubLinkArray[2] }}" target="_blank">Github</a>
                 </div>
             </div>
         </div>

@@ -1,14 +1,13 @@
 <div class="contact-header" [ngClass]="{'fly-in-left': isScrolledIntoView}">
     <div class="line"></div>
-    <h2>Contact</h2>
+    <h2>{{ getTranslation('contactHeadline') }}</h2>
 </div>
 <div class="full-contact-section">
     <div class="contact-container">
         <div class="contact-text" [ngClass]="{'fly-in-left': isScrolledIntoView}">
-            <h3>Got a problem to solve?</h3>
-            <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to
-                your projects with my work.</p>
-            <p>Need a Frontend developer? <b>Contact me!</b></p>
+            <h3>{{ getTranslation('contactHeader') }}</h3>
+            <p>{{ getTranslation('contactP1') }}</p>
+            <p [innerHTML]="getTranslation('contactP2')"></p>
         </div>
         <div class="form-scroll-up" [ngClass]="{'fly-in-right': isScrolledIntoView}">
             <form name="form" #f="ngForm" (ngSubmit)="f.form.valid && onSubmit(f)" novalidate>
@@ -17,7 +16,7 @@
                         [ngClass]="{ 'is-invalid': f.submitted && fullname.errors, 'is-valid': fullname.valid }">
                         <label for="name"></label>
                         <input id="name" type="text" class="form-control" name="fullname" [(ngModel)]="form.fullname"
-                            #fullname="ngModel" placeholder="Your name" required minlength="2">
+                        #fullname="ngModel" [placeholder]="getTranslation('namePlaceholder')" required minlength="2">                    
                         <img *ngIf="fullname.valid" src="../../../assets/img/icons/green-mark.png" class="success-icon"
                             alt="Success">
                         <img *ngIf="f.submitted && fullname.errors" src="../../../assets/img/icons/red-mark.png"
@@ -39,7 +38,7 @@
                         [ngClass]="{ 'is-invalid': f.submitted && email.errors, 'is-valid': email.valid }">
                         <label for="email"></label>
                         <input id="email" type="email" class="form-control" name="email" [(ngModel)]="form.email" email
-                            #email="ngModel" placeholder="Your email"
+                            #email="ngModel" [placeholder]="getTranslation('emailPlaceholder')"
                             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
                         <img *ngIf="email.valid" src="../../../assets/img/icons/green-mark.png" class="success-icon"
                             alt="Success">
@@ -62,7 +61,7 @@
                         [ngClass]="{ 'is-invalid': f.submitted && message.errors, 'is-valid': message.valid }">
                         <label for="message"></label>
                         <textarea id="message" class="form-control" name="message" [(ngModel)]="form.message" minlength="4"
-                            #message="ngModel" placeholder="Your message" required></textarea>
+                            #message="ngModel" [placeholder]="getTranslation('messagePlaceholder')" required></textarea>
                         <img *ngIf="message.valid" src="../../../assets/img/icons/green-mark.png" class="success-icon"
                             alt="Success">
                         <img *ngIf="f.submitted && message.errors" src="../../../assets/img/icons/red-mark.png"
@@ -84,10 +83,8 @@
                         <input id="privacy-policy" type="checkbox" class="form-control" name="acceptPolicy" [(ngModel)]="form.acceptPolicy"
                             class="form-check-input" required #acceptPolicy="ngModel"
                             [ngClass]="{ 'is-invalid-checkbox': f.submitted && acceptPolicy.errors }">
-                        <label for="privacy-policy" id="checkbox-text">I read the <a href="privacy-policy"
-                                target="_blank">privacy policy</a> and agree
-                            to
-                            the processing of my data as outlined.</label>
+                        <label for="privacy-policy" id="checkbox-text">{{ getTranslation('contactPrivacy') }} <a href="privacy-policy" target="_blank">{{ getTranslation('contactPrivacyLink') }}</a> {{ getTranslation('contactPrivacy2') }}
+                        </label>
 
                     </div>
                     @if (f.submitted && acceptPolicy.errors) {

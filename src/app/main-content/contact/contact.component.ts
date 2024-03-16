@@ -2,6 +2,7 @@ import { CommonModule, NgSwitch } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, HostListener, ElementRef } from '@angular/core';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
+import { LanguageService, Translation } from '../../language.service';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +14,11 @@ import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 export class ContactComponent {
   isScrolledIntoView = false;
 
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef, private languageService: LanguageService) {}
+
+  getTranslation(key: keyof Translation): string {
+    return this.languageService.getTranslation(key);
+  }
 
   @HostListener('window:scroll', [])
   onScroll() {
@@ -36,20 +41,6 @@ export class ContactComponent {
   };
 
   submitStatus: 'idle' | 'loading' | 'success' = 'idle';
-
-//   onSubmit(form: NgForm): void {
-//     this.submitStatus = 'loading';
-
-//     setTimeout(() => {
-//       console.log(JSON.stringify(this.form));
-//       form.resetForm();
-//       this.submitStatus = 'success';
-//       setTimeout(() => {
-//         this.submitStatus = 'idle';
-//       }, 2000);
-//     }, 2000);
-// }
-
 
   mailTest = false;
 
@@ -95,13 +86,27 @@ export class ContactComponent {
   getButtonStatusText(): string {
     switch (this.submitStatus) {
       case 'idle':
-        return 'Send message :)';
+        return this.getTranslation('idleButtonText');
       case 'loading':
-        return 'Loading...';
+        return this.getTranslation('loadingButtonText');
       case 'success':
-        return 'Message sent :)';
+        return this.getTranslation('successButtonText');
       default:
-        return 'Send message :)';
+        return this.getTranslation('idleButtonText');
     }
   }
 }
+
+
+//   onSubmit(form: NgForm): void {
+//     this.submitStatus = 'loading';
+
+//     setTimeout(() => {
+//       console.log(JSON.stringify(this.form));
+//       form.resetForm();
+//       this.submitStatus = 'success';
+//       setTimeout(() => {
+//         this.submitStatus = 'idle';
+//       }, 2000);
+//     }, 2000);
+// }

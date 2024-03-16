@@ -48,10 +48,10 @@
         </div>
         <div class="skills-text" [ngClass]="{'fly-in-left': isScrolledIntoView}">
             <div class="line"></div>
-            <h2>My skills</h2>
-            <p>I have gained experience in building projects with various front end technologies and concepts.</p>
+            <h2>{{ getTranslation('skillsHeader') }}</h2>
+            <p>{{ getTranslation('skillsText') }}</p>
             <div class="btn">
-                <a href="#contact-section">Get in touch</a>
+                <a href="#contact-section">{{ getTranslation('skillsContact') }}</a>
             </div>
         </div>
     </div>

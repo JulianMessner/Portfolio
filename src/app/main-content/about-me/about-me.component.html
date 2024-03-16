@@ -1,9 +1,7 @@
 <div class="about-me-container">
     <div class="section-left" [ngClass]="{'fly-in-left': isScrolledIntoView}">
-        <h2>About me</h2>
-        <span>My name is Julian, I am a 23-year-old living in Vienna. Through my practice-oriented training as a
-            frontend developer at the Developer Akademie, I was able to gain experience in the development of various
-            applications and pursue my passion.
+        <h2>{{ getTranslation('aboutMeHeader') }}</h2>
+        <span>{{ getTranslation('aboutMeText') }}
         </span>
         <div class="bulb-section">
             <img src="../../../assets/img/icons/bulb.png" alt="bulb">
@@ -13,16 +11,12 @@
                 I am consistently striving for acquiring new skills and enhancing my proficiency in emerging
                 technologies.
             </p> -->
-            <p>As a dedicated software developer, I find a world of creativity and logic in every code.
-                My enthusiasm is fueled by the challenge of developing user-friendly, intuitive interfaces and web
-                applications. Continuously seeking to acquire new skills, I am dedicated to enhancing my proficiency in
-                emerging technologies.</p>
+            <p>{{ getTranslation('bulbText') }}</p>
 
         </div>
         <div class="puzzle-section">
             <img src="../../../assets/img/icons/puzzle.png" alt="puzzle">
-            <p>I have gained fundamental experience in core web technologies, acquired through the development of
-                web applications, both independently and collaboratively within a team.
+            <p>{{ getTranslation('puzzleText') }}
             </p>
         </div>
     </div>
