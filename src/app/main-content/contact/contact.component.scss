@@ -1,14 +1,14 @@
 .contact-header,
 .contact-text {
-    opacity: 0;
-    transform: translateX(-100px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .form-scroll-up {
-    opacity: 0;
-    transform: translateX(100px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .fly-in-left {
@@ -20,7 +20,6 @@
   opacity: 1;
   transform: translateX(0);
 }
-
 
 .contact-header {
   width: 100%;
@@ -47,7 +46,6 @@
   transform: translateX(0);
   position: relative;
 }
-
 
 .contact-container {
   display: flex;
@@ -80,7 +78,7 @@ form {
   flex-direction: column;
   align-items: center;
   position: relative;
-  >div{
+  > div {
     > #name-field,
     #email-field {
       width: 100%;

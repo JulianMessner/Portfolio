@@ -8,7 +8,6 @@
   animation: fly-in-right 1s ease forwards;
 }
 
-
 .landing-page-content {
   display: flex;
   width: auto;
@@ -21,15 +20,10 @@
   margin-left: 100px;
   margin-right: 100px;
   position: relative;
-  // background-image: url(../../../assets/img/background/group-shade.png);
-  // background-repeat: no-repeat;
-  // background-position: left;
-  // background-size: contain;
   .image-group {
     > #me-image {
       height: 350px;
       margin-left: 40px;
-      // animation: slideInLeft 700ms ease-in-out;
     }
   }
 }
@@ -58,10 +52,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // animation: slideInRight 700ms ease-in-out;
   > .btn a {
-    // position: absolute;
-    // top: 400px;
     text-decoration: none;
     color: white;
     background-color: #00bee8;
@@ -112,5 +103,4 @@
   display: flex;
   position: relative;
   justify-content: space-between;
-  // animation: slideInLeft 700ms ease-in-out;
 }

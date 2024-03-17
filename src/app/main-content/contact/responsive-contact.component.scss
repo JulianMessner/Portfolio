@@ -1,115 +1,113 @@
 @media screen and (max-width: 1200px) {
-    .full-contact-section{
-      margin-left: 50px;
-    }
-  
-    form{
-      margin-right: 60px;
-    }
-  
-    .scroll-up{
-      margin-right: 50px;
-    }
-  
-    .contact-header{
-      >h2{
-        font-size: 57px;
-      }
-      >.line{
-        width: 35px;
-      }
-    }
-  
-    .contact-text{
-      margin-right: 50px;
-      max-width: 300px;
-    }
-  
-    .contact-container{
-      margin-right: 50px;
-    }
-  
+  .full-contact-section {
+    margin-left: 50px;
   }
-  
-  @media screen and (max-width: 1020px) {
-    #sendButton{
-      padding: 10px 20px 10px 20px;
-      width: auto;
-      &.valid {
-        &:hover {
-          padding: 15px 25px;
-        }
+
+  form {
+    margin-right: 60px;
+  }
+
+  .scroll-up {
+    margin-right: 50px;
+  }
+
+  .contact-header {
+    > h2 {
+      font-size: 57px;
+    }
+    > .line {
+      width: 35px;
+    }
+  }
+
+  .contact-text {
+    margin-right: 50px;
+    max-width: 300px;
+  }
+
+  .contact-container {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  #sendButton {
+    padding: 10px 20px 10px 20px;
+    width: auto;
+    &.valid {
+      &:hover {
+        padding: 15px 25px;
       }
     }
   }
-  
-  @media screen and (max-width: 770px) {
-    .contact-container{
-      flex-direction: column;
-    }
-  
-    .contact-text{
-      max-width: 100%;
-      margin-bottom: 50px;
-      >p{
-        text-align: justify;
-      }
-    }
-  
-    .form-scroll-up{
-      display: block;
-    }
-  
-    form{
-      margin-left: 0px;
-      margin-right: 80px;
-    }
-  
-    .scroll-up{
-      right: 0;
-    }
-  
-    #bg-img{
-      height: 300px;
-      
+}
+
+@media screen and (max-width: 770px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-text {
+    max-width: 100%;
+    margin-bottom: 50px;
+    > p {
+      text-align: justify;
     }
   }
-  
-  @media screen and (max-width: 520px) {
-    .contact-header{
-      >h2{
-        font-size: 40px;
-      }
-      >.line{
-        width: 5px;
-      }
+
+  .form-scroll-up {
+    display: block;
+  }
+
+  form {
+    margin-left: 0px;
+    margin-right: 80px;
+  }
+
+  .scroll-up {
+    right: 0;
+  }
+
+  #bg-img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .contact-header {
+    > h2 {
+      font-size: 40px;
     }
-  
-    .full-contact-section{
-      margin-left: 20px;
-    }
-  
-    .contact-text{
-      >h3{
-        font-size: 20px;
-      }
-    }
-  
-    .contact-container{
-      margin-right: 0;
-    }
-  
-    .scroll-up{
-      top: 650px;
-    }
-  
-    #message-field,
-    #email-field,
-    #name-field{
-      width: auto !important;
-    }
-  
-    form{
-      margin-right: 40px;
+    > .line {
+      width: 5px;
     }
   }
+
+  .full-contact-section {
+    margin-left: 20px;
+  }
+
+  .contact-text {
+    > h3 {
+      font-size: 20px;
+    }
+  }
+
+  .contact-container {
+    margin-right: 0;
+  }
+
+  .scroll-up {
+    top: 650px;
+  }
+
+  #message-field,
+  #email-field,
+  #name-field {
+    width: auto !important;
+  }
+
+  form {
+    margin-right: 40px;
+  }
+}

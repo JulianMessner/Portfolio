@@ -1,49 +1,49 @@
 .links {
-    margin-top: 20px;
-    > .project-link {
-      text-decoration: none;
-      border: none;
-      color: white;
-      background-color: #4b47ff;
-      border-radius: 10px;
-      padding: 15px 30px 15px 30px;
-      gap: 10px;
-      font-size: 23px;
-      font-weight: 400;
-      margin-right: 86px;
-      &:hover {
-        cursor: pointer;
-        background-color: #00bee8;
-      }
-    }
-    > .github-link {
-      text-decoration: none;
-      border: 1px solid #00bee8;
-      color: white;
-      border-radius: 10px;
-      padding: 15px 30px 15px 30px;
-      gap: 10px;
-      font-size: 23px;
-      font-weight: 400;
-      &:hover {
-        cursor: pointer;
-        background-color: #00bee8;
-      }
+  margin-top: 20px;
+  > .project-link {
+    text-decoration: none;
+    border: none;
+    color: white;
+    background-color: #4b47ff;
+    border-radius: 10px;
+    padding: 15px 30px 15px 30px;
+    gap: 10px;
+    font-size: 23px;
+    font-weight: 400;
+    margin-right: 86px;
+    &:hover {
+      cursor: pointer;
+      background-color: #00bee8;
     }
   }
-  
-  #bg-img1{
-    position: absolute;
-    z-index: -1;
-    height: 500px;
-    bottom: 100px;
-    left: -200px;
+  > .github-link {
+    text-decoration: none;
+    border: 1px solid #00bee8;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 30px 15px 30px;
+    gap: 10px;
+    font-size: 23px;
+    font-weight: 400;
+    &:hover {
+      cursor: pointer;
+      background-color: #00bee8;
+    }
   }
-  
-  #bg-img2{
-    position: absolute;
-    z-index: -1;
-    bottom: -300px;
-    height: 500px;
-    right: -250px;
-  }
+}
+
+#bg-img1 {
+  position: absolute;
+  z-index: -1;
+  height: 500px;
+  bottom: 100px;
+  left: -200px;
+}
+
+#bg-img2 {
+  position: absolute;
+  z-index: -1;
+  bottom: -300px;
+  height: 500px;
+  right: -250px;
+}

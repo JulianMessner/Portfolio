@@ -1,24 +1,24 @@
-.skills-icons{
+.skills-icons {
   opacity: 0;
   transform: translateX(-100px);
   transition: opacity 1s ease, transform 1s ease;
 }
 
 .skills-text,
-.btn.btn.responsive{
-opacity: 0;
-transform: translateX(100px);
-transition: opacity 1s ease, transform 1s ease;
+.btn.btn.responsive {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .fly-in-left {
-opacity: 1;
-transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .fly-in-right {
-opacity: 1;
-transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .skills-full-content {
@@ -111,7 +111,7 @@ transform: translateX(0);
   border: 2px solid #4b47ff;
 }
 
-#bg-img{
+#bg-img {
   position: absolute;
   height: 400px;
   z-index: -1;

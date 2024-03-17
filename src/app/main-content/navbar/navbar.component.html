@@ -8,7 +8,8 @@
             <a href="#skills-section">{{ getTranslation('skills') }}</a>
             <a href="#portfolio-section">{{ getTranslation('portfolio') }}</a>
             <a href="#contact-section">{{ getTranslation('contact') }}</a>
-            <button class="language-button" (click)="switchLanguage()">{{ getCurrentLanguage() === 'en' ? 'DE' : 'EN' }}</button>
+            <button class="language-button" (click)="switchLanguage()">{{ getCurrentLanguage() === 'en' ? 'DE' : 'EN'
+                }}</button>
         </div>
         <img id="responsive-nav-icon" src="../../../assets/img/icons/responsive-navbar.png" alt="responsive-navbar"
             [ngClass]="{'hide': isResponsiveNavVisible, 'showIcon': !isResponsiveNavVisible}"
@@ -16,14 +17,16 @@
     </div>
 
 
-    <div class="responsive-nav" [ngClass]="{'show': isResponsiveNavVisible, 'hideDiv': slideOut}">        <img id="close-navbar"
-            src="../../../assets/img/icons/close-navbar.png" alt="close navbar" (click)="closeResponsiveNav()">
+    <div class="responsive-nav" [ngClass]="{'show': isResponsiveNavVisible, 'hideDiv': slideOut}"> <img
+            id="close-navbar" src="../../../assets/img/icons/close-navbar.png" alt="close navbar"
+            (click)="closeResponsiveNav()">
         <div class="nav-links-responsive">
             <a (click)="closeResponsiveNav()" href="#about-me-section">{{ getTranslation('about') }}</a>
             <a (click)="closeResponsiveNav()" href="#skills-section">{{ getTranslation('skills') }}</a>
             <a (click)="closeResponsiveNav()" href="#portfolio-section">{{ getTranslation('portfolio') }}</a>
             <a (click)="closeResponsiveNav()" href="#contact-section">{{ getTranslation('contact') }}</a>
-            <button class="responsive-language-button" (click)="switchLanguage()">{{ getCurrentLanguage() === 'en' ? 'DE' : 'EN' }}</button>
+            <button class="responsive-language-button" (click)="switchLanguage()">{{ getCurrentLanguage() === 'en' ?
+                'DE' : 'EN' }}</button>
         </div>
     </div>
 </div>

@@ -7,7 +7,11 @@ import { LanguageService, Translation } from '../../../language.service';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './project-left.component.html',
-  styleUrls: ['./project-left.component.scss', './project-left2.component.scss', './responsive-project-left.component.scss']
+  styleUrls: [
+    './project-left.component.scss',
+    './project-left2.component.scss',
+    './responsive-project-left.component.scss',
+  ],
 })
 export class ProjectLeftComponent {
   imageSrcArray = [
@@ -39,20 +43,33 @@ export class ProjectLeftComponent {
 
   isScrolledIntoView = false;
 
-  constructor(private el: ElementRef, private languageService: LanguageService) {}
+  constructor(
+    private el: ElementRef,
+    private languageService: LanguageService
+  ) {}
 
+
+  /**
+   * Retrieves translation for the given key from LanguageService.
+   * @param {keyof Translation} key - The key for translation.
+   * @returns {string} - The translated string.
+   */
   getTranslation(key: keyof Translation): string {
     return this.languageService.getTranslation(key);
   }
 
+  
+  /**
+   * Listener for scroll events on the window to determine if the component is in view.
+   */
   @HostListener('window:scroll', [])
   onScroll() {
-      const rect = this.el.nativeElement.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-        const isPartiallyInView = rect.top <= windowHeight && rect.bottom >= 500;
-  
-      if (!this.isScrolledIntoView && isPartiallyInView) {
-          this.isScrolledIntoView = true;
-      }
+    const rect = this.el.nativeElement.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    const isPartiallyInView = rect.top <= windowHeight && rect.bottom >= 500;
+
+    if (!this.isScrolledIntoView && isPartiallyInView) {
+      this.isScrolledIntoView = true;
+    }
   }
 }
