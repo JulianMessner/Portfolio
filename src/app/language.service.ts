@@ -120,6 +120,8 @@ export interface Translation {
   imprint9: string;
   imprint10: string;
   imprint11: string;
+
+  footerImprint: string;
 }
 
 export interface Translations {
@@ -154,7 +156,7 @@ export class LanguageService {
       skillsText: 'I have gained experience in building projects with various front end technologies and concepts.',
       skillsContact: 'Get in touch',
 
-      portfolioText: 'This page is a sample of my work! Scroll down to view other projects I have developed.',
+      portfolioText: 'This page, which I developed with Angular, is a sample of my work! Scroll down to view other projects I have developed.',
       joinText: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       eplText: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find bottles to fight against the mega chicken.',
       pokedexText: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
@@ -253,7 +255,7 @@ export class LanguageService {
       imprint10: '<b>Disclaimer:</b> Despite careful content control, the operator of this website assumes no liability for the content of external links. The operators of the linked pages are solely responsible for their content. If you become aware of outgoing links that refer to a website with illegal activity/information, please inform us promptly to remove them in accordance with &sect; 17 para. 2 ECG.<br>The copyrights of third parties are carefully observed by the operator of this website. If you nevertheless become aware of a copyright infringement, please provide appropriate notice. Upon becoming aware of such legal violations, we will promptly remove the affected content.',
       imprint11: 'in cooperation with ',
 
-
+      footerImprint: 'Imprint',
     },
     de: {
       about: 'Über mich',
@@ -374,6 +376,7 @@ export class LanguageService {
       imprint10: '<b>Haftungsausschluss:</b> Trotz sorgfältiger inhaltlicher Kontrolle übernimmt der Betreiber dieser Website keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich. Sollten Ihnen ausgehende Links bekannt werden, die auf eine Website mit rechtswidrigen Aktivitäten/Informationen verweisen, informieren Sie uns bitte umgehend, damit wir diese gemäß Abschnitt 3.1 entfernen können. 17 Abs. 2 ECG.<br>Die Urheberrechte Dritter werden vom Betreiber dieser Website sorgfältig beachtet. Sollten Sie dennoch auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir die entsprechenden Inhalte umgehend entfernen.',
       imprint11: 'in Kooperation mit ',
 
+      footerImprint: 'Impressum',
     }
   };
 

@@ -22,8 +22,8 @@ footer {
 .logo-and-imprint {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 180px;
+  align-items: center;
+  width: auto;
   > img {
     height: 50px;
   }
@@ -35,7 +35,6 @@ span {
 
 .link-div,
 .link-div-responsive {
-  padding-left: 15px;
   > a {
     text-decoration: none;
     color: white;
