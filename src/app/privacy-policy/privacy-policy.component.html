@@ -1,389 +1,109 @@
 <div class="full-page">
     <!-- <a href="main-page">Back to home</a> -->
     <div class="policy-content">
-        <h1>Data Protection Declaration</h1>
-        <h2 id="m716">Preamble</h2>
-        <p>With the following data protection declaration, we would like to inform you about the types of your personal
-            data
-            (hereinafter also referred to shortly as "data") that we process, for what purposes, and to what extent. The
-            data
-            protection declaration applies to all processing of personal data carried out by us, both in the provision
-            of
-            our
-            services and especially on our websites, in mobile applications, and within external online presences, such
-            as
-            our
-            social media profiles (hereinafter collectively referred to as the "online offering").</p>
-        <p>The terms used are not gender-specific.</p>
+        <h1>{{ getTranslation('privacyHeadline') }}</h1>
+        <h2 id="m716">{{ getTranslation('privacyPreamble') }}</h2>
+        <p>{{ getTranslation('privacyP1') }}</p>
+        <p>{{ getTranslation('privacyP2') }}</p>
 
-        <p>Date: March 3, 2024</p>
+        <p>{{ getTranslation('privacyP3') }}</p>
 
 
-        <h2 id="m3">Controller</h2>
-        <p>Julian Messner<br>Hugogasse<br>1110 Vienna, Austria</p>
-        Email Address: <a href="mailto:first.name&#64;exampledomain.eu">julian.messner&#64;icloud.com</a>
+        <h2 id="m3">{{ getTranslation('privacyP4') }}</h2>
+        <p>Julian Messner<br>Hugogasse<br>{{ getTranslation('privacyAdress') }}</p>
+        Email: <a href="mailto:first.name&#64;exampledomain.eu">julian.messner&#64;icloud.com</a>
 
-        <h2 id="mOverview">Overview of Processing</h2>
-        <p>The following overview summarizes the types of processed data and the purposes of their processing, referring
-            to
-            the
-            affected individuals.</p>
-        <h3>Types of Processed Data</h3>
+        <h2 id="mOverview">{{ getTranslation('privacyP5') }}</h2>
+        <p>{{ getTranslation('privacyP6') }}</p><br>
+        <h3>{{ getTranslation('privacyP7') }}</h3>
         <ul>
-            <li>Contact details.</li>
-            <li>Content data.</li>
-            <li>Usage data.</li>
-            <li>Meta, communication, and procedural data.</li>
-        </ul>
-        <h3>Categories of Affected Individuals</h3>
+            <li>{{ getTranslation('privacyP8') }}</li>
+            <li>{{ getTranslation('privacyP9') }}</li>
+            <li>{{ getTranslation('privacyP10') }}</li>
+            <li>{{ getTranslation('privacyP11') }}</li>
+        </ul><br>
+        <h3>{{ getTranslation('privacyP12') }}</h3>
         <ul>
-            <li>Communication partners.</li>
-            <li>Users.</li>
-        </ul>
-        <h3>Purposes of Processing</h3>
-        <ul>
-            <li>Contact inquiries and communication.</li>
-            <li>Security measures.</li>
-            <li>Management and response to inquiries.</li>
-            <li>Feedback.</li>
-            <li>Provision of our online offering and user-friendliness.</li>
-            <li>Information technology infrastructure.</li>
-        </ul>
+            <li>{{ getTranslation('privacyP13') }}</li>
+            <li>{{ getTranslation('privacyP14') }}</li>
+        </ul><br>
+        <h3>{{ getTranslation('privacyP15') }}</h3>
+        <ul [innerHTML]="getTranslation('privacyP16')"></ul>
 
-        <h2 id="m2427">Relevant Legal Bases</h2>
-        <p><strong>Relevant legal bases according to the GDPR:</strong> Below, you will find an overview of the legal
-            bases
-            of the GDPR on which we process personal data. Please note that, in addition to the provisions of the GDPR,
-            national data protection regulations may apply in your or our country of residence or business. If more
-            specific
-            legal bases are relevant in individual cases, we will inform you of these in the data protection
-            declaration.
+        <h2 id="m2427">{{ getTranslation('privacyP17') }}</h2>
+        <p [innerHTML]="getTranslation('privacyP18')">
         </p>
-        <ul>
-            <li><strong>Consent (Art. 6(1)(a) GDPR)</strong> - The data subject has given consent to the processing of
-                their
-                personal data for one or more specific purposes.</li>
-            <li><strong>Contractual performance and pre-contractual inquiries (Art. 6(1)(b) GDPR)</strong> - Processing
-                is
-                necessary for the performance of a contract to which the data subject is a party or for the
-                implementation
-                of pre-contractual measures requested by the data subject.</li>
-            <li><strong>Legitimate interests (Art. 6(1)(f) GDPR)</strong> - Processing is necessary for the purposes of
-                the
-                legitimate interests pursued by the controller or a third party, except where such interests are
-                overridden
-                by the interests or fundamental rights and freedoms of the data subject requiring the protection of
-                personal
-                data.</li>
+        <ul [innerHTML]="getTranslation('privacyP19')">
         </ul>
-        <p><strong>National data protection regulations in Austria:</strong> In addition to the GDPR, there are national
-            data protection regulations in Austria. This includes, in particular, the Federal Act for the Protection of
-            Individuals with regard to the Processing of Personal Data (Data Protection Act - DSG). The Data Protection
-            Act
-            contains specific regulations, especially regarding the right to information, the right to correction or
-            deletion, the processing of special categories of personal data, processing for other purposes, and
-            transmission, as well as automated decision-making in individual cases.</p>
+        <p [innerHTML]="getTranslation('privacyP20')"></p>
 
-        <h2 id="m27">Security Measures</h2>
-        <p>In accordance with legal requirements, we implement appropriate technical and organizational measures, taking
-            into account the state of the art, implementation costs, the nature, scope, circumstances, and purposes of
-            processing, as well as the varying likelihood and severity of the risk to the rights and freedoms of natural
-            persons. These measures include securing the confidentiality, integrity, and availability of data by
-            controlling
-            physical and electronic access to the data, as well as the access, input, transmission, availability, and
-            separation of data. We have also established procedures to ensure the exercise of data subject rights, the
-            deletion of data, and responses to data threats. Additionally, we consider data protection during the
-            development or selection of hardware, software, and procedures, following the principle of data protection
-            by
-            design and by default.</p>
-        <p>TLS/SSL encryption (https): To protect user data transmitted through our online services, we use TLS/SSL
-            encryption. Secure Sockets Layer (SSL) is the standard technology for securing internet connections by
-            encrypting data transmitted between a website or app and a browser (or between two servers). Transport Layer
-            Security (TLS) is an updated and more secure version of SSL. Hyper Text Transfer Protocol Secure (HTTPS) is
-            displayed in the URL when a website is secured by an SSL/TLS certificate.</p>
+        <h2 id="m27">{{ getTranslation('privacyP21') }}</h2>
+        <p>{{ getTranslation('privacyP22') }}</p>
+        <p>{{ getTranslation('privacyP23') }}</p>
 
-        <h2 id="m25">Transmission of Personal Data</h2>
-        <p>As part of our processing of personal data, it may happen that the data is transmitted or disclosed to other
-            entities, companies, legally independent organizational units, or individuals. Recipients of this data may
-            include service providers or providers of services and content integrated into a website, especially those
-            with
-            IT tasks. In such cases, we comply with legal requirements and conclude appropriate contracts or agreements
-            that
-            serve to protect your data with the recipients of your data.</p>
+        <h2 id="m25">{{ getTranslation('privacyP24') }}</h2>
+        <p>{{ getTranslation('privacyP25') }}</p>
 
-        <h2 id="m24">International Data Transfers</h2>
-        <p>Data processing in third countries: If we process data in a third country (i.e., outside the European Union
-            (EU)
-            or the European Economic Area (EEA)) or if processing takes place in connection with the use of services
-            from
-            third parties or the disclosure or transmission of data to other persons, entities, or companies, this only
-            occurs in compliance with legal requirements. If the level of data protection in the third country has been
-            recognized by an adequacy decision (Art. 45 GDPR), this decision serves as the basis for the data transfer.
-            Otherwise, data transfers only take place if the level of data protection is otherwise ensured, particularly
-            through standard contractual clauses (Art. 46(2)(c) GDPR), explicit consent, or in the case of contractual
-            or
-            legally required transmission (Art. 49(1) GDPR). In addition, we will inform you of the basis for the
-            transfer
-            to third countries with each provider from the third country, with adequacy decisions taking precedence as
-            the
-            basis. Information on third-country transfers and existing adequacy decisions can be found in the
-            information
-            provided by the EU Commission: <a
+        <h2 id="m24">{{ getTranslation('privacyP26') }}</h2>
+        <p>{{ getTranslation('privacyP27') }}<a
                 href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection_en?prefLang=de"
-                target="_blank">https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection_en?prefLang=de.</a>
+                target="_blank">https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection_en?prefLang=de.</a><br><br>
         </p>
-        <p>EU-US Trans-Atlantic Data Privacy Framework: Within the framework of the "Data Privacy Framework" (DPF), the
-            EU
-            Commission has also recognized the level of data protection as safe for certain companies from the USA under
-            the
-            adequacy decision of July 10, 2023. The list of certified companies and further information on the DPF can
-            be
-            found on the website of the US Department of Commerce at <a href="https://www.dataprivacyframework.gov/"
-                target="_blank">https://www.dataprivacyframework.gov/</a> (in English). We will inform you in the
-            context of
-            the data protection notices which service providers certified under the Data Privacy Framework we use.</p>
+        <p>{{ getTranslation('privacyP28') }} <a href="https://www.dataprivacyframework.gov/"
+                target="_blank">https://www.dataprivacyframework.gov/</a> {{ getTranslation('privacyP29') }}</p>
 
-        <h2 id="m12">Deletion of Data</h2>
-        <p>We delete the data we process in accordance with legal requirements as soon as the consents granted for
-            processing are revoked or other permissions are no longer valid (e.g., when the purpose of processing this
-            data
-            has ceased to exist or it is not required for the purpose). If the data is not deleted because it is
-            necessary
-            for other and legally permissible purposes, its processing is limited to these purposes. This applies, for
-            example, to data that must be retained for commercial or tax reasons or whose storage is necessary for
-            asserting, exercising, or defending legal claims or protecting the rights of another natural or legal
-            person.
-            Our data protection notices may also contain further information on the storage and deletion of data that
-            primarily applies to the respective processing.</p>
+        <h2 id="m12">{{ getTranslation('privacyP30') }}</h2>
+        <p>{{ getTranslation('privacyP31') }}</p>
 
-        <h2 id="m10">Rights of Data Subjects</h2>
-        <p>Rights of data subjects under the GDPR: You, as data subjects, have various rights under the GDPR,
-            particularly
-            arising from Art. 15 to 21 GDPR:</p>
-        <ul>
-            <li><strong>Right to object:</strong> You have the right to object at any time, on grounds relating to your
-                particular situation, to the processing of personal data concerning you which is based on Art. 6(1)(e)
-                or
-                (f) GDPR, including profiling based on those provisions. If the personal data concerning you is
-                processed
-                for direct marketing purposes, you have the right to object at any
-
-                time to the processing of personal data concerning you for the purpose of such marketing; this also
-                applies
-                to profiling insofar as it is related to such direct marketing.</li>
-            <li><strong>Right to withdraw consent:</strong> You have the right to withdraw your consent at any time.
-            </li>
-            <li><strong>Right to information:</strong> You have the right to request confirmation as to whether personal
-                data concerning you is being processed and, if so, to obtain information about this data and further
-                details
-                according to legal requirements.</li>
-            <li><strong>Right to rectification:</strong> You have the right to request the completion of personal data
-                concerning you or the correction of inaccurate data concerning you according to legal requirements.</li>
-            <li><strong>Right to erasure and restriction of processing:</strong> You have the right, in accordance with
-                legal requirements, to request the immediate erasure of personal data concerning you or, alternatively,
-                the
-                restriction of processing of the data.</li>
-            <li><strong>Right to data portability:</strong> You have the right to receive the personal data concerning
-                you,
-                which you have provided to us, in a structured, commonly used, and machine-readable format or to request
-                the
-                transmission of this data to another controller according to legal requirements.</li>
-            <li><strong>Complaint to supervisory authority:</strong> Without prejudice to any other administrative or
-                judicial remedy, you have the right to lodge a complaint with a supervisory authority, particularly in
-                the
-                Member State of your habitual residence, place of work, or the place of the alleged infringement, if you
-                believe that the processing of personal data concerning you violates the provisions of the GDPR.</li>
+        <h2 id="m10">{{ getTranslation('privacyP32') }}</h2>
+        <p>{{ getTranslation('privacyP33') }}</p>
+        <ul [innerHTML]="getTranslation('privacyP34')">
         </ul>
        
 
 
-        <h2 id="m134">Use of Cookies</h2>
-        <p>Cookies are small text files or other storage markers that store information on devices and retrieve
-            information
-            from devices. For example, to store login status in a user account, shopping cart content in an e-shop,
-            viewed
-            content, or used functions of an online offering. Cookies can also be used for various purposes, such as
-            functionality, security, and comfort of online offerings, as well as creating analyses of visitor flows.</p>
-        <p><strong>Consent Information:</strong> We use cookies in accordance with legal requirements. Therefore, we
-            obtain
-            prior consent from users, unless legally not required. Consent is not necessary, in particular, when storing
-            and
-            retrieving information, including cookies, is absolutely necessary to provide users with an explicitly
-            requested
-            telemedia service (i.e., our online offering). Typically, essential cookies include cookies with functions
-            related to the display and functionality of the online offering, load balancing, security, storage of user
-            preferences, and choices or similar purposes related to providing the main and ancillary functions of the
-            online
-            offering requested by users. Revocable consent is clearly communicated to users and includes information
-            about
-            the specific use of cookies.</p>
-        <p><strong>Data Protection Legal Bases:</strong> The legal basis for processing users' personal data using
-            cookies
-            depends on whether we ask users for consent. If users consent, the legal basis for processing their data is
-            the
-            declared consent. Otherwise, data processed using cookies is based on our legitimate interests (e.g., in the
-            economic operation of our online offering and improving its usability) or, if the use of cookies is
-            necessary to
-            fulfill our contractual obligations, on the basis of the contract. We provide information about the purposes
-            for
-            which we process cookies during this data protection declaration or as part of our consent and processing
-            processes.</p>
-        <p><strong>Storage Duration:</strong> Regarding the storage duration, the following types of cookies are
-            distinguished:</p>
-        <ul>
-            <li><strong>Temporary Cookies (also: Session or Session Cookies):</strong> Temporary cookies are deleted at
-                the
-                latest after a user leaves an online offering and closes their device (e.g., browser or mobile
-                application).
-            </li>
-            <li><strong>Permanent Cookies:</strong> Permanent cookies remain stored even after the device is closed. For
-                example, login status can be saved, or preferred content can be displayed directly when the user
-                revisits a
-                website. Additionally, data collected using cookies can be used for audience measurement. If we do not
-                provide explicit information about the type and duration of cookies (e.g., as part of obtaining
-                consent),
-                users should assume that cookies are permanent and may have a storage duration of up to two years.</li>
+        <h2 id="m134">{{ getTranslation('privacyP35') }}</h2>
+        <p>{{ getTranslation('privacyP36') }}</p>
+        <p [innerHTML]="getTranslation('privacyP37')"></p>
+        <p [innerHTML]="getTranslation('privacyP38')"></p>
+        <p [innerHTML]="getTranslation('privacyP39')"></p>
+        <ul [innerHTML]="getTranslation('privacyP40')">
         </ul>
-        <p><strong>General Information on Revocation and Objection (Opt-Out):</strong> Users can revoke their consent at
-            any
-            time and object to processing in accordance with legal requirements. Users can restrict the use of cookies
-            in
-            their browser settings (which may also limit the functionality of our online offering). An objection to the
-            use
-            of cookies for online marketing purposes can also be declared on the websites <a
-                href="https://optout.aboutads.info/" target="_new">https://optout.aboutads.info</a> and <a
+        <p><strong>{{ getTranslation('privacyP41') }}</strong> {{ getTranslation('privacyP42') }} <a
+                href="https://optout.aboutads.info/" target="_new">https://optout.aboutads.info</a> {{ getTranslation('privacyP43') }} <a
                 href="https://www.youronlinechoices.com/" target="_new">https://www.youronlinechoices.com/</a>.</p>
         <ul class="m-elements">
-            <li class=""><strong>Legal Bases:</strong> Legitimate Interests (Art. 6(1)(f) GDPR), Consent (Art. 6(1)(a)
-                GDPR).</li>
+            <li [innerHTML]="getTranslation('privacyP44')"></li>
         </ul>
-        <p><strong>Additional Information on Processing Processes, Procedures, and Services:</strong></p>
-        <ul class="m-elements">
-            <li><strong>Processing of Cookie Data Based on Consent:</strong> We use a consent management solution to
-                obtain,
-                log, manage, and revoke user consent for the use of cookies or procedures and providers mentioned in the
-                consent management solution. This process is used to obtain, log, manage, and revoke consents,
-                particularly
-                regarding the use of cookies and similar technologies used to store, retrieve, and process information
-                on
-                users' devices. Within this process, user consents for the use of cookies and related information
-                processing, including specific processing and providers mentioned in the consent management process, are
-                obtained. Users also have the option to manage and revoke their consents. Consent declarations are
-                stored to
-                avoid repeated queries and to provide evidence of consent in accordance with legal requirements. Storage
-                is
-                done server-side and/or in a cookie (so-called opt-in cookie) or using similar technologies to associate
-                consent with a specific user or their device. If there are no specific indications about the providers
-                of
-                consent management services, the following general information applies: The storage duration of consent
-                is
-                up to two years. A pseudonymous user identifier is created, which is stored together with the time of
-                consent, details about the scope of consent (e.g., relevant categories of cookies and/or service
-                providers),
-                and information about the browser, system, and device used; <span class=""><strong>Legal Bases:</strong>
-                    Consent (Art. 6(1)(a) GDPR).</span></li>
+        <p [innerHTML]="getTranslation('privacyP45')"></p>
+        <ul class="m-elements" [innerHTML]="getTranslation('privacyP46')">
         </ul>
-        <h2 id="m225">Provision of the Online Offering and Web Hosting</h2>
-        <p>We process user data to provide them with our online services. For this purpose, we process the user's IP
-            address, which is necessary to transmit the contents and functions of our online services to the user's
-            browser
-            or device.</p>
-        <ul class="m-elements">
-            <li><strong>Processed Data Types:</strong> Usage Data (e.g., visited websites, interest in content, access
-                times); Meta, communication, and process data (e.g., IP addresses, time information, identification
-                numbers,
-                consent status).</li>
-            <li><strong>Concerned Individuals:</strong> Users (e.g., website visitors, users of online services).</li>
-            <li><strong>Purposes of Processing:</strong> Provision of our online offering and user-friendliness;
-                Information
-                technology infrastructure (operation and provision of information systems and technical devices
-                (computers,
-                servers, etc.)); Security measures.</li>
-            <li class=""><strong>Legal Bases:</strong> Legitimate Interests (Art. 6(1)(f) GDPR).</li>
+        <h2 id="m225">{{ getTranslation('privacyP47') }}</h2>
+        <p>{{ getTranslation('privacyP48') }}</p>
+        <ul class="m-elements" [innerHTML]="getTranslation('privacyP49')">
         </ul>
-        <p><strong>Additional Information on Processing Processes, Procedures, and Services:</strong></p>
-        <ul class="m-elements">
-            <li><strong>Provision of Online Offering on Rented Storage Space:</strong> For providing our online
-                offering, we
-                use storage space, computing capacity, and software that we rent or otherwise obtain from a
-                corresponding
-                server provider (also called "web hoster"); <span class=""><strong>Legal Bases:</strong> Legitimate
-                    Interests (Art. 6(1)(f) GDPR).</span></li>
-            <li><strong>Collection of Access Data and Log Files:</strong> Access to our online offering is logged in the
-                form of so-called "server log files." Server log files may include the address and name of the accessed
-                websites and files, date and time of access, transferred data volumes, message about successful access,
-                browser type and version, the user's operating system, referrer URL (the previously visited page), and
-                usually IP addresses and the requesting provider. Server log files can be used, on the one hand, for
-                security purposes, e.g., to avoid overloading servers (especially in the
+        <p><br><strong>{{ getTranslation('privacyP50') }}</strong></p>
+        <ul class="m-elements" [innerHTML]="getTranslation('privacyP51')">
 
-                case of abusive attacks, so-called DDoS attacks), and on the other hand, to ensure the load and
-                stability of
-                the servers; <span class=""><strong>Legal Bases:</strong> Legitimate Interests (Art. 6(1)(f) GDPR).
-                </span><strong>Data Deletion:</strong> Log file information is stored for a maximum of 30 days and then
-                deleted or anonymized. Data required for evidence purposes is excluded from deletion until the final
-                clarification of the respective incident.</li>
         </ul>
-        <h2 id="m182">Contact and Inquiry Management</h2>
-        <p>When contacting us (e.g., by post, contact form, email, telephone, or via social media) and within existing
-            user
-            and business relationships, the information provided by the inquiring individuals is processed as far as
-            necessary to answer contact inquiries and any requested measures.</p>
-        <ul class="m-elements">
-            <li><strong>Processed Data Types:</strong> Contact data (e.g., email, phone numbers); Content data (e.g.,
-                entries in online forms); Usage data (e.g., visited websites, interest in content, access times); Meta,
-                communication, and process data (e.g., IP addresses, time information, identification numbers, consent
-                status).</li>
-            <li><strong>Concerned Individuals:</strong> Communication partners.</li>
-            <li><strong>Purposes of Processing:</strong> Contact inquiries and communication; Management and response to
-                inquiries; Feedback (e.g., collecting feedback via online form); Provision of our online offering and
-                user-friendliness.</li>
-            <li class=""><strong>Legal Bases:</strong> Legitimate Interests (Art. 6(1)(f) GDPR), Contract Performance
-                and
-                Pre-contractual Inquiries (Art. 6(1)(b) GDPR).</li>
+        <h2 id="m182">{{ getTranslation('privacyP52') }}</h2>
+        <p> {{ getTranslation('privacyP53') }}</p>
+        <ul class="m-elements" [innerHTML]="getTranslation('privacyP54')">
         </ul>
-        <p><strong>Additional Information on Processing Processes, Procedures, and Services:</strong></p>
-        <ul class="m-elements">
-            <li><strong>Contact Form:</strong> When users contact us via our contact form, email, or other communication
-                channels, we process the data communicated to us in this context to handle the reported issue; <span
-                    class=""><strong>Legal Bases:</strong> Contract Performance and Pre-contractual Inquiries (Art.
-                    6(1)(b)
-                    GDPR), Legitimate Interests (Art. 6(1)(f) GDPR).</span></li>
+        <p><br><strong>{{ getTranslation('privacyP55') }}</strong></p>
+        <ul class="m-elements" [innerHTML]="getTranslation('privacyP56')">
         </ul>
-        <h2 id="m15">Change and Update of the Privacy Policy</h2>
-        <p>We ask you to regularly inform yourself about the content of our privacy policy. We adjust the privacy policy
-            as
-            soon as changes in the data processing carried out by us make this necessary. We will inform you as soon as
-            the
-            changes require your cooperation (e.g., consent) or individual notification.</p>
-        <p>If we provide addresses and contact information of companies and organizations in this privacy policy, please
-            note that the addresses may change over time, and we ask you to verify the information before contacting.
+        <h2 id="m15">{{ getTranslation('privacyP57') }}</h2>
+        <p>{{ getTranslation('privacyP58') }}</p>
+        <p>{{ getTranslation('privacyP59') }}
         </p>
-        <h2 id="m42">Definition of Terms</h2>
-        <p>In this section, you will find an overview of the terms used in this privacy policy. Where the terms are
-            legally
-            defined, their legal definitions apply. The following explanations are primarily intended to aid
-            understanding.
+        <h2 id="m42">{{ getTranslation('privacyP60') }}</h2>
+        <p>{{ getTranslation('privacyP61') }}
         </p>
-        <ul class="glossary">
-            <li><strong>Personal Data:</strong> "Personal data" refers to any information relating to an identified or
-                identifiable natural person (hereinafter "data subject"); an identifiable natural person is one who can
-                be
-                identified, directly or indirectly, in particular by reference to an identifier such as a name, an
-                identification number, location data, an online identifier (e.g., cookie), or one or more specific
-                characteristics expressing the physical, physiological, genetic, mental, economic, cultural, or social
-                identity of that natural person. </li>
-            <li><strong>Controller:</strong> The term "controller" refers to the natural or legal person, public
-                authority,
-                agency, or other body that, alone or jointly with others, determines the purposes and means of the
-                processing of personal data. </li>
-            <li><strong>Processing:</strong> "Processing" is any operation or set of operations performed on personal
-                data,
-                whether or not by automated means. The term covers virtually any handling of data, be it collecting,
-                evaluating, storing, transmitting, or deleting. </li>
+        <ul class="glossary" [innerHTML]="getTranslation('privacyP62')">
         </ul>
         <p class="seal"><a href="https://datenschutz-generator.de/"
                 title="Legal text by Dr. Schwenke - click here for more information." target="_blank"
-                rel="noopener noreferrer nofollow">Created with the free Data Protection Generator.de by Dr. Thomas
-                Schwenke</a></p>
+                rel="noopener noreferrer nofollow">{{ getTranslation('privacyP63') }}</a></p>
     </div>
 </div>

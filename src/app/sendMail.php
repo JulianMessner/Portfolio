@@ -15,7 +15,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $params = json_decode($json);
     
             $email = $params->email;
-            $name = $params->name;
+            $name = $params->fullname;
             $message = $params->message;
     
             $recipient = 'julianmessner.22@gmail.com';  
