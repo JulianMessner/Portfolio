@@ -108,6 +108,18 @@ export interface Translation {
   privacyP61: string;
   privacyP62: string;
   privacyP63: string;
+
+  imprint1: string;
+  imprint2: string;
+  imprint3: string;
+  imprint4: string;
+  imprint5: string;
+  imprint6: string;
+  imprint7: string;
+  imprint8: string;
+  imprint9: string;
+  imprint10: string;
+  imprint11: string;
 }
 
 export interface Translations {
@@ -229,6 +241,19 @@ export class LanguageService {
       privacyP62: '<li><strong>Personal Data:</strong> "Personal data" refers to any information relating to an identified or identifiable natural person (hereinafter "data subject"); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier (e.g., cookie), or one or more specific characteristics expressing the physical, physiological, genetic, mental, economic, cultural, or social identity of that natural person. </li><li><strong>Controller:</strong> The term "controller" refers to the natural or legal person, public authority, agency, or other body that, alone or jointly with others, determines the purposes and means of the processing of personal data. </li><li><strong>Processing:</strong> "Processing" is any operation or set of operations performed on personal data, whether or not by automated means. The term covers virtually any handling of data, be it collecting, evaluating, storing, transmitting, or deleting. </li>',
       privacyP63: 'Created with the free Data Protection Generator.de by Dr. Thomas Schwenke',
 
+      imprint1: 'Imprint',
+      imprint2: '<b>Information and Disclosure according to &sect;5 (1) ECG, &sect; 25 MedienG, &sect; 63 GewO, and &sect; 14 UGB</b>',
+      imprint3: 'Website Operator:',
+      imprint4: '<b>Address:</b> Hugogasse, 1110 Vienna',
+      imprint5: 'Contact Information: ',
+      imprint6: '<b>Applicable Legal Regulations:</b> www.ris.bka.gv.at ',
+      imprint7: 'Online Dispute Resolution:',
+      imprint8: 'Consumers based in Austria or in any other contracting state of the ODR Regulation have the opportunity to resolve issues regarding the paid purchase of goods or services through online dispute resolution (according to OS, AStG). The European Commission provides a platform for this purpose:',
+      imprint9: '<b>Copyright:</b> The content of this website is subject, as far as legally possible, to various protective rights (e.g., copyright). Any use/distribution of provided material that is prohibited by copyright requires the written consent of the website operator.',
+      imprint10: '<b>Disclaimer:</b> Despite careful content control, the operator of this website assumes no liability for the content of external links. The operators of the linked pages are solely responsible for their content. If you become aware of outgoing links that refer to a website with illegal activity/information, please inform us promptly to remove them in accordance with &sect; 17 para. 2 ECG.<br>The copyrights of third parties are carefully observed by the operator of this website. If you nevertheless become aware of a copyright infringement, please provide appropriate notice. Upon becoming aware of such legal violations, we will promptly remove the affected content.',
+      imprint11: 'in cooperation with ',
+
+
     },
     de: {
       about: 'Über mich',
@@ -336,6 +361,18 @@ export class LanguageService {
       privacyP61: 'In diesem Abschnitt finden Sie eine Übersicht über die in dieser Datenschutzerklärung verwendeten Begrifflichkeiten. Soweit die Begriffe gesetzlich definiert sind, gelten deren rechtliche Definitionen. Die folgenden Erläuterungen dienen in erster Linie dem Verständnis.',
       privacyP62: '<li><strong>Personenbezogene Daten:</strong> „Personenbezogene Daten“ sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (im Folgenden „betroffene Person“) beziehen; Eine identifizierbare natürliche Person ist eine natürliche Person, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung (z. B. Cookie) oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann die physische, physiologische, genetische, psychische, wirtschaftliche, kulturelle oder soziale Identität dieser natürlichen Person. </li><li><strong>Verantwortlicher:</strong> Der Begriff „Verantwortlicher“ bezeichnet die natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von Daten entscheidet persönliche Daten. </li><li><strong>Verarbeitung:</strong> „Verarbeitung“ ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführte Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten. Der Begriff umfasst nahezu jeden Umgang mit Daten, sei es das Erheben, Auswerten, Speichern, Übermitteln oder Löschen. </li>',
       privacyP63: 'Erstellt mit dem kostenlosen Datenschutz-Generator.de von Dr. Thomas Schwenke',
+
+      imprint1: 'Impressum',
+      imprint2: '<b>Informationen und Offenlegung gemäß § 5 (1) ECG, &sect; § 25 MedienG, &sect; 63 GewO und &sect; 14 UGB</b>',
+      imprint3: 'Websitebetreiber:',
+      imprint4: '<b>Addresse:</b> Hugogasse, 1110 Wien',
+      imprint5: 'Kontakt: ',
+      imprint6: '<b>Anwendbare gesetzliche Bestimmungen:</b> www.ris.bka.gv.at',
+      imprint7: 'Online-Streitbeilegung:',
+      imprint8: 'Verbraucher mit Sitz in Österreich oder in einem anderen Vertragsstaat der ODR-VO haben die Möglichkeit, Fragen im Zusammenhang mit dem entgeltlichen Kauf von Waren oder Dienstleistungen im Wege der Online-Streitbeilegung (gemäß OS, AStG) zu klären. Die Europäische Kommission stellt hierfür eine Plattform bereit:',
+      imprint9: '<b>Urheberrecht:</b> Der Inhalt dieser Website unterliegt, soweit gesetzlich möglich, verschiedenen Schutzrechten (z. B. Urheberrecht). Jede urheberrechtlich unzulässige Nutzung/Verbreitung des zur Verfügung gestellten Materials bedarf der schriftlichen Zustimmung des Websitebetreibers.',
+      imprint10: '<b>Haftungsausschluss:</b> Trotz sorgfältiger inhaltlicher Kontrolle übernimmt der Betreiber dieser Website keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich. Sollten Ihnen ausgehende Links bekannt werden, die auf eine Website mit rechtswidrigen Aktivitäten/Informationen verweisen, informieren Sie uns bitte umgehend, damit wir diese gemäß Abschnitt 3.1 entfernen können. 17 Abs. 2 ECG.<br>Die Urheberrechte Dritter werden vom Betreiber dieser Website sorgfältig beachtet. Sollten Sie dennoch auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir die entsprechenden Inhalte umgehend entfernen.',
+      imprint11: 'in Kooperation mit ',
 
     }
   };
