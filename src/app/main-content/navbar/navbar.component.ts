@@ -16,8 +16,13 @@ export class NavbarComponent {
     return this.languageService.getTranslation(key);
   }
 
-  switchToLanguage(lang: string) {
-    this.languageService.setCurrentLanguage(lang);
+  getCurrentLanguage(): string {
+    return this.languageService.getCurrentLanguage();
+  }
+
+  switchLanguage() {
+    const newLanguage = this.getCurrentLanguage() === 'en' ? 'de' : 'en';
+    this.languageService.setCurrentLanguage(newLanguage);
   }
 
   isResponsiveNavVisible = false;

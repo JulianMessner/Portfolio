@@ -114,3 +114,18 @@
 .showIcon {
   display: block;
 }
+
+.language-button,
+.responsive-language-button{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    background: none;
+    border: 1px solid #00bee8;
+    border-radius: 5px;
+    width: 50px;
+    &:hover{
+      cursor: pointer;
+      background: #00bee872;
+    }
+}

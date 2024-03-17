@@ -268,26 +268,26 @@ export class LanguageService {
 
       aboutMeHeader:  'Über mich',
       aboutMeText: 'Mein Name ist Julian, ich bin 23 Jahre alt und lebe in Wien. Durch meine praxisorientierte Ausbildung zum Frontend-Entwickler an der Developer Akademie konnte ich Erfahrungen in der Entwicklung von verschiedenen Anwendungen sammeln und meiner Leidenschaft nachgehen.',
-      bulbText: 'Als engagierter Softwareentwickler finde ich in jedem Code eine Welt voller Kreativität und Logik. Die Herausforderung, benutzerfreundliche, intuitive Oberflächen und Webanwendungen zu entwickeln, begeistert mich. Anwendungen. Ich bin ständig bestrebt, mir neue Fähigkeiten anzueignen, um meine Kenntnisse in aufkommenden Technologien.',
+      bulbText: 'Als engagierter Softwareentwickler finde ich in jedem Code eine Welt voller Kreativität und Logik. Die Herausforderung, benutzerfreundliche, intuitive Oberflächen und Webanwendungen zu entwickeln, begeistert mich. Ich bin ständig bestrebt, mir neue Fähigkeiten anzueignen, um meine Kenntnisse in aufkommenden und bestehenden Technologien zu erweitern.',
       puzzleText: 'Ich habe grundlegende Erfahrungen in den wichtigsten Webtechnologien gesammelt, die ich bei der Entwicklung von Webanwendungen, sowohl unabhängig als auch in Zusammenarbeit mit einem Team.',
 
       skillsHeader: 'Meine Fähigkeiten',
-      skillsText: 'Ich habe Erfahrung in der Erstellung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.',
+      skillsText: 'Ich habe Erfahrung in der Entwicklung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.',
       skillsContact: 'Kontaktieren',
 
-      portfolioText: 'Diese Seite ist ein Beispiel für meine Arbeit! Scrollen Sie nach unten, um andere Projekte zu sehen, die ich entwickelt habe.',
-      joinText: 'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
+      portfolioText: 'Diese Seite, entwickelt mit Angular, ist ein Beispiel für meine Arbeit. Scrolle nach unten, um andere Projekte zu sehen, die ich entwickelt habe.',
+      joinText: 'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstelle und organisiere Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.',
       eplText: 'Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Flaschen zu finden, um gegen das Megahuhn zu kämpfen.',
       pokedexText: 'Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.',
       test: 'Live Test',
 
       contactHeadline: 'Kontakt',
-      contactHeader: 'Haben Sie ein Problem zu lösen?',
-      contactP1: 'Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen. Ihre Projekte mit meiner Arbeit zu unterstützen.',
+      contactHeader: 'Hast du ein Problem zu lösen?',
+      contactP1: 'Kontaktiere mich übder diese Formular. Ich freue mich von dir zu hören und dich mit meiner Arbeit zu deinen Projekten zu unterstützen.',
       contactPrivacyLink: 'Datenschutzerklärung',
-      contactP2: 'Brauchen Sie einen Frontend-Entwickler? <b>Kontaktieren Sie mich!>b>',
+      contactP2: 'Auf der Suche nach einem Frontend-Entwickler? <b>Kontaktiere mich!>b>',
       contactPrivacy: 'Ich habe die',
-      contactPrivacy2: ' gelesen und stimme zu der Verarbeitung meiner Daten wie beschrieben zu.',
+      contactPrivacy2: ' gelesen und stimme zu der Verarbeitung meiner Daten, wie beschrieben, zu.',
       namePlaceholder: 'Dein Name',
       emailPlaceholder: 'Deine Email',
       messagePlaceholder: 'Deine Nachricht',
@@ -298,7 +298,7 @@ export class LanguageService {
       privacyHeadline: 'Datenschutzerklärung',
       privacyPreamble: 'Vorwort',
       privacyAdress: '1110 Wien, Österreich',
-      privacyP1: 'Mit der nachfolgenden Datenschutzerklärung möchten wir Sie über die Arten Ihrer personenbezogenen Daten informieren (nachfolgend auch kurz „Daten“), die wir zu welchen Zwecken und in welchem Umfang verarbeiten. Die Daten Die Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der Bereitstellung unserer Dienste und insbesondere auf unseren Websites, in mobilen Anwendungen und innerhalb externer Online-Präsenzen, wie z.B. unserer Social-Media-Profile (nachfolgend zusammenfassend bezeichnet als „Onlineangebot“).',
+      privacyP1: 'Mit der nachfolgenden Datenschutzerklärung möchten wir Sie über die Arten Ihrer personenbezogenen Daten informieren (nachfolgend auch kurz „Daten“), die wir verarbeiten. Die Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der Bereitstellung unserer Dienste und insbesondere auf unseren Websites, in mobilen Anwendungen und innerhalb externer Online-Präsenzen, wie z.B. unserer Social-Media-Profile (nachfolgend zusammenfassend bezeichnet als „Onlineangebot“).',
       privacyP2: 'Die verwendeten Begriffe sind nicht geschlechtsspezifisch.',
       privacyP3: 'Datum: 17. März 2024',
       privacyP4: 'Ansprechperson',
@@ -370,7 +370,7 @@ export class LanguageService {
       imprint6: '<b>Anwendbare gesetzliche Bestimmungen:</b> www.ris.bka.gv.at',
       imprint7: 'Online-Streitbeilegung:',
       imprint8: 'Verbraucher mit Sitz in Österreich oder in einem anderen Vertragsstaat der ODR-VO haben die Möglichkeit, Fragen im Zusammenhang mit dem entgeltlichen Kauf von Waren oder Dienstleistungen im Wege der Online-Streitbeilegung (gemäß OS, AStG) zu klären. Die Europäische Kommission stellt hierfür eine Plattform bereit:',
-      imprint9: '<b>Urheberrecht:</b> Der Inhalt dieser Website unterliegt, soweit gesetzlich möglich, verschiedenen Schutzrechten (z. B. Urheberrecht). Jede urheberrechtlich unzulässige Nutzung/Verbreitung des zur Verfügung gestellten Materials bedarf der schriftlichen Zustimmung des Websitebetreibers.',
+      imprint9: '<b>Urheberrecht:</b> Der Inhalt dieser Website unterliegt, soweit gesetzlich möglich, verschiedenen Schutzrechten (z. B. Urheberrecht). Jede urheberrechtlich unzulässige Nutzung/Verbreitung des zur Verfügung gestellten Materials bedarf der schriftlichen Zustimmung des Websitenbetreibers.',
       imprint10: '<b>Haftungsausschluss:</b> Trotz sorgfältiger inhaltlicher Kontrolle übernimmt der Betreiber dieser Website keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich. Sollten Ihnen ausgehende Links bekannt werden, die auf eine Website mit rechtswidrigen Aktivitäten/Informationen verweisen, informieren Sie uns bitte umgehend, damit wir diese gemäß Abschnitt 3.1 entfernen können. 17 Abs. 2 ECG.<br>Die Urheberrechte Dritter werden vom Betreiber dieser Website sorgfältig beachtet. Sollten Sie dennoch auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir die entsprechenden Inhalte umgehend entfernen.',
       imprint11: 'in Kooperation mit ',
 
@@ -389,6 +389,10 @@ export class LanguageService {
     this.currentLanguage = lang;
     // Den Sprachwert im Local Storage speichern
     this.localStorageService.setItem(this.LANGUAGE_KEY, lang);
+  }
+
+  getCurrentLanguage(): string {
+    return this.currentLanguage;
   }
 
   getTranslation(key: keyof Translation): string {
