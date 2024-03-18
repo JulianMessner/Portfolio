@@ -4,10 +4,6 @@
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-// app-root{
-//   overflow-x: hidden;
-// }
-
 /* poppins-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -84,20 +80,7 @@ body {
   flex-direction: column;
   background-color: #151d2f;
   overflow-x: hidden !important;
-
-  // background-image: url(./assets/img/background/purpe-shade1.png),
-  //   url(./assets/img/background/vector.png);
-  // background-position: right -500px top 500px, 0px 350px;
-  // background-size: 50%, 100%;
-  // background-repeat: no-repeat, no-repeat;
 }
-
-// @media screen and (max-width: 1020px){
-//   body{
-//     background-position: right -500px top 500px, 0px 350px;
-
-//   }
-// }
 
 ::-webkit-scrollbar {
   width: 8px;
