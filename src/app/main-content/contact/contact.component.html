@@ -86,7 +86,7 @@
                             [(ngModel)]="form.acceptPolicy" class="form-check-input" required #acceptPolicy="ngModel"
                             [ngClass]="{ 'is-invalid-checkbox': f.submitted && acceptPolicy.errors }">
                         <label for="privacy-policy" id="checkbox-text">{{ getTranslation('contactPrivacy') }} <a
-                                href="privacy-policy" target="_blank">{{ getTranslation('contactPrivacyLink') }}</a> {{
+                                href="privacy-policy">{{ getTranslation('contactPrivacyLink') }}</a> {{
                             getTranslation('contactPrivacy2') }}
                         </label>
 
