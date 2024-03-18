@@ -29,37 +29,13 @@
   }
 }
 
-@media screen and (max-width: 1020px) {
-  .landing-page-content {
-    .image-group {
-      > #me-image {
-        height: 300px;
-      }
-    }
-  }
-
-  .landing-page-intro {
-    > span {
-      font-size: 36px;
-    }
-    > .landing-page-name {
-      > #my-name {
-        font-size: 40px;
-        margin-top: 8px;
-      }
-      > #job-name {
-        font-size: 30px;
-      }
-    }
-  }
-
+@media screen and (max-width: 1100px) {
   #vector-image {
-    top: 300px;
+    top: 255px;
   }
+}
 
-  #bg-image {
-    height: 350px;
-  }
+@media screen and (max-width: 1020px) {
 
   .scroll-down {
     right: -65px;
@@ -75,7 +51,42 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+
+
+  .landing-page-intro {
+    > span {
+      font-size: 36px;
+    }
+    > .landing-page-name {
+      > #my-name {
+        font-size: 40px;
+        margin-top: 8px;
+      }
+      > #job-name {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 830px) {
+  .full-landing-page{
+    margin-top: 60px;
+  }
+  .landing-page-content {
+    .image-group {
+      position: relative;
+      > #me-image {
+        height: 350px;
+      }
+    }
+  }
+
+  #bg-image {
+    height: 350px;
+  }
+
   .landing-page-content {
     flex-direction: column;
     margin-left: 20px;
@@ -84,7 +95,7 @@
   }
 
   #vector-image {
-    top: 350px;
+    top: 290px;
   }
 
   .image-group {
@@ -92,12 +103,20 @@
       margin-right: 50px;
     }
   }
-  .landing-page-content-right {
-    margin-top: 10px;
-  }
+  // .landing-page-content-right {
+  //   margin-top: 10px;
+  // }
 }
 
 @media screen and (max-width: 600px) {
+  .landing-page-content {
+    .image-group {
+      > #me-image {
+        height: 330px;
+      }
+    }
+  }
+
   .scroll-down {
     display: none;
   }
@@ -113,6 +132,12 @@
   .contact-right {
     > .social-icons {
       margin-left: 40px;
+    }
+  }
+  .contact-right {
+    > .line {
+      left: -70%;
+      width: 200px;
     }
   }
 }

@@ -4,6 +4,10 @@
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
+// app-root{
+//   overflow-x: hidden;
+// }
+
 /* poppins-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -79,7 +83,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #151d2f;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 
   // background-image: url(./assets/img/background/purpe-shade1.png),
   //   url(./assets/img/background/vector.png);

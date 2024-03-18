@@ -1,4 +1,12 @@
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 520px) {
+  .landing-page-intro{
+    >span{
+      font-size: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
   .landing-page-content {
     margin-left: 10px;
     margin-right: 10px;
@@ -29,7 +37,7 @@
   }
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 440px) {
   .landing-page-intro {
     > span {
       margin-right: 0;
@@ -47,11 +55,6 @@
       > #job-name {
         font-size: 22px;
       }
-    }
-  }
-  .contact-right {
-    > .line {
-      width: 60px;
     }
   }
 }
