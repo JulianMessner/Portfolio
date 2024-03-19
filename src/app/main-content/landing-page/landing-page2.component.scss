@@ -72,3 +72,70 @@
     transform: translateY(-5px) rotate(90deg);
   }
 }
+
+@media screen and (min-height: 770px){
+  #vector-image {
+    top: 300px;
+  }
+
+  .landing-page-content {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (min-height: 950px){
+  .full-landing-page {
+    margin-top: 50px;
+  }
+  #vector-image {
+    top: 300px;
+  }
+  .landing-page-content {
+    flex-direction: column;
+    margin-top: 100px;
+    > .image-group {
+      position: relative;
+      > #me-image,
+      #bg-image {
+        height: 450px;
+      }
+    }
+  }
+}
+
+@media screen and (min-height: 1200px){
+  .full-landing-page {
+    margin-top: 100px;
+  }
+  #vector-image {
+    top: 400px;
+  }
+
+  .landing-page-content {
+    > .image-group {
+      > #me-image,
+      #bg-image {
+        height: 550px;
+      }
+    }
+  }
+}
+
+@media screen and (min-height: 1400px) {
+  .full-landing-page {
+    margin-top: 150px;
+  }
+  .landing-page-intro {
+    > span {
+      font-size: 80px;
+    }
+    > .landing-page-name {
+      > #my-name {
+        font-size: 95px;
+      }
+      > #job-name {
+        font-size: 65px;
+      }
+    }
+  }
+}

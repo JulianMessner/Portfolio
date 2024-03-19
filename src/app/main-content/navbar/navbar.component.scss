@@ -1,3 +1,10 @@
+@media screen and (min-width: 1400px){
+  .header {
+  width: 100%;
+  max-width: 1430px;
+  }
+}
+
 .header {
   width: 100vw;
   position: fixed;
@@ -15,7 +22,7 @@
   font-size: 23px;
   padding-left: 100px;
   padding-right: 100px;
-  max-width: 1900px;
+  max-width: 1800px;
 }
 
 .header-logo {
