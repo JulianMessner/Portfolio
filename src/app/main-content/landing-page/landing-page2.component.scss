@@ -139,3 +139,14 @@
     }
   }
 }
+
+@media screen and (min-width: 1900px) {
+  .landing-page-content {
+    > .image-group {
+      > #me-image,
+      #bg-image {
+        height: 500px;
+      }
+    }
+  }
+}

@@ -96,3 +96,9 @@ input:-webkit-autofill:active {
   bottom: -200px;
   left: -200px;
 }
+
+@media screen and (min-width: 1900px) {
+  #bg-img{
+    left: 200px;
+  }
+}

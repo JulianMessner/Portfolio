@@ -37,6 +37,6 @@ export class NavbarComponent {
     this.slideOut = true;
     setTimeout(() => {
       this.slideOut = false;
-    }, 500);
+    }, 300);
   }
 }

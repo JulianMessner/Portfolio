@@ -47,3 +47,16 @@
   height: 500px;
   right: -250px;
 }
+
+
+@media screen and (min-width: 1900px) {
+  #bg-img1{
+    bottom: -200px;
+    left: -100px;
+  }
+
+  #bg-img2{
+    right: -100px;
+    bottom: -250px;
+  }
+}
