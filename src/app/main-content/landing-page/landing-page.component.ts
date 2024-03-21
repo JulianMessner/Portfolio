@@ -12,6 +12,7 @@ import { LanguageService, Translation } from '../../language.service';
     './landing-page2.component.scss',
     './responsive-landing-page-component.scss',
     './responsive2-landing-page.component.scss',
+    './responsive3-landing-page.component.scss',
   ],
 })
 export class LandingPageComponent {
