@@ -6,3 +6,13 @@
 app-landing-page{
   max-width: 1900px;
 }
+
+@media screen and (min-width: 1900px) {
+  app-about-me,
+  app-skills,
+  app-portfolio,
+  app-contact{
+    display: flex;
+    justify-content: center;
+  }
+}

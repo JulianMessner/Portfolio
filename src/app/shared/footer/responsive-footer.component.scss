@@ -70,3 +70,13 @@
     font-size: 16px;
   }
 }
+
+
+@media screen and (min-width: 1500px) {
+  footer{
+    width: 100vw;
+  }
+  .footer-full-content{
+    max-width: 1900px;
+  }
+}

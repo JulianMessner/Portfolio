@@ -58,3 +58,48 @@
     }
   }
 }
+
+@media screen and (min-width: 1700px) {
+  .landing-page-content {
+    > .image-group {
+      > #me-image,
+      #bg-image {
+        height: 500px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .full-landing-page{
+    width: 100vw;
+    max-width: 3000px;
+  }
+
+  .below-full{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing-page-bottom{
+    max-width: 1900px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .landing-page-content {
+    > .image-group {
+      > #me-image,
+      #bg-image {
+        height: 650px;
+      }
+    }
+  }
+
+  #vector-image{
+    top: 350px;
+  }
+}

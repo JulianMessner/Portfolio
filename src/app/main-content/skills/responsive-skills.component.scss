@@ -135,3 +135,14 @@
     }
   }
 }
+
+@media screen and (min-width: 1900px) {
+  .skills-full-content{
+    max-width: 1900px;
+    width: 100%;
+  }
+
+  .skills-text{
+    margin-right: 100px;
+  }
+}

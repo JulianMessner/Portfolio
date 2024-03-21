@@ -130,3 +130,10 @@
     width: 300px;
   }
 }
+
+@media  screen and (min-width: 1900px) {
+  .full-portfolio-section{
+    width: 100vw;
+    max-width: 1900px;
+  }
+}

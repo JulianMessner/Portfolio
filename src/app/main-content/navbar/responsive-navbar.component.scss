@@ -1,6 +1,6 @@
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1400px) {
   .header {
-  width: 100%;
+    width: 100%;
   }
 }
 
@@ -29,5 +29,19 @@
     > .nav-links {
       display: none;
     }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    max-width: unset;
+    background-color: #151d2f;
+  }
+
+  .header-content {
+    width: 100%;
   }
 }

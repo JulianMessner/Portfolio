@@ -4,3 +4,19 @@
     max-width: 1900px;
     width: 100%;
 }
+
+@media screen and (min-width: 1500px) {
+    .entire-content{
+        width: 100vw;
+        max-width: 3000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    app-navbar{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+}
