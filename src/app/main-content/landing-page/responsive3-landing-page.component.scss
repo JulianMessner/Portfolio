@@ -90,3 +90,15 @@
     top: 500px;
   }
 }
+
+@media screen and (max-height: 950px) and (min-width: 1500px) and (max-width: 2300px){
+  .landing-page-content {
+    > .image-group {
+      position: relative;
+      > #me-image,
+      #bg-image {
+        height: 500px;
+      }
+    }
+  }
+}

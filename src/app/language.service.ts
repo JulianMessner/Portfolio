@@ -148,7 +148,7 @@ export class LanguageService {
       scrollDown: 'Scroll down',
 
       aboutMeHeader:  'About me',
-      aboutMeText: 'My name is Julian, I am a 23-year-old living in Vienna. Through my practice-oriented training as a frontend developer at the Developer Akademie, I was able to gain experience in the development of various applications and pursue my passion.',
+      aboutMeText: "My name is Julian. I am a 23 year old frontend developer from Vienna. During my professional training at the Developer Akademie, I was able to gain experience in the creation of various applications and pursue my passion.",
       bulbText: 'As a dedicated software developer, I find a world of creativity and logic in every code. My enthusiasm is fueled by the challenge of developing user-friendly, intuitive interfaces and web applications. Continuously seeking to acquire new skills, I am dedicated to enhancing my proficiency in emerging technologies.',
       puzzleText: 'I have gained fundamental experience in core web technologies, acquired through the development of web applications, both independently and collaboratively within a team.',
 
@@ -271,7 +271,7 @@ export class LanguageService {
       aboutMeHeader:  'Über mich',
       aboutMeText: 'Mein Name ist Julian, ich bin 23 Jahre alt und lebe in Wien. Durch meine praxisorientierte Ausbildung zum Frontend-Entwickler an der Developer Akademie konnte ich Erfahrungen in der Entwicklung von verschiedenen Anwendungen sammeln und meiner Leidenschaft nachgehen.',
       bulbText: 'Als engagierter Softwareentwickler finde ich in jedem Code eine Welt voller Kreativität und Logik. Die Herausforderung, benutzerfreundliche, intuitive Oberflächen und Webanwendungen zu entwickeln, begeistert mich. Ich bin ständig bestrebt, mir neue Fähigkeiten anzueignen, um meine Kenntnisse in aufkommenden und bestehenden Technologien zu erweitern.',
-      puzzleText: 'Ich habe grundlegende Erfahrungen in den wichtigsten Webtechnologien gesammelt, die ich bei der Entwicklung von Webanwendungen, sowohl unabhängig als auch in Zusammenarbeit mit einem Team.',
+      puzzleText: 'Ich habe grundlegende Erfahrungen in verschiedenen Webtechnologien gesammelt, die ich durch die Entwicklung von Webanwendungen, sowohl unabhängig, als auch in Zusammenarbeit mit einem Team, mir aneignen konnte.',
 
       skillsHeader: 'Meine Fähigkeiten',
       skillsText: 'Ich habe Erfahrung in der Entwicklung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.',
@@ -285,9 +285,9 @@ export class LanguageService {
 
       contactHeadline: 'Kontakt',
       contactHeader: 'Hast du ein Problem zu lösen?',
-      contactP1: 'Kontaktiere mich übder diese Formular. Ich freue mich von dir zu hören und dich mit meiner Arbeit zu deinen Projekten zu unterstützen.',
+      contactP1: 'Kontaktiere mich über dieses Formular. Ich freue mich von dir zu hören und dich mit meiner Arbeit zu deinen Projekten zu unterstützen.',
       contactPrivacyLink: 'Datenschutzerklärung',
-      contactP2: 'Auf der Suche nach einem Frontend-Entwickler? <b>Kontaktiere mich!>b>',
+      contactP2: 'Auf der Suche nach einem Frontend-Entwickler? <b>Kontaktiere mich!<b>',
       contactPrivacy: 'Ich habe die',
       contactPrivacy2: ' gelesen und stimme zu der Verarbeitung meiner Daten, wie beschrieben, zu.',
       namePlaceholder: 'Dein Name',
